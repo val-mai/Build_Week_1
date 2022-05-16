@@ -168,6 +168,8 @@ div.nomepiatto h3{
 }
 div.nomepiatto span{
   color: #968868;
+  font-size: 1rem;
+  font-weight: 500;
 }
 div.oggettolista p{
   margin-top: 15px;
