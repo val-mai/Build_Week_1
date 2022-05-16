@@ -337,7 +337,7 @@ figure {
 }
 
 .news p {
-    padding: 25px;
+    padding-top: 1.8em;
     color: var(--bianco);
 }
 
