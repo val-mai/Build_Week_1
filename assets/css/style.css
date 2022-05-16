@@ -189,6 +189,12 @@ div.lista ul {
     list-style: none;
 }
 
+div.nomepiatto span{
+  color: #968868;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
 div.oggettolista {
     padding: 20px 0 20px 0;
 }
