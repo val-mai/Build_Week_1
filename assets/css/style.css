@@ -132,6 +132,7 @@ figure {
 
 /* ====== News CSS ====== */
 .news {
+  padding: 100px 0px;
   text-align: center;
   background: url("../images/subscribe-bg.jpg");
   background-repeat: no-repeat;
@@ -141,7 +142,6 @@ figure {
 
 .news h1{
   color: var(--bianco);
-  font-size: 36px;
 }
 
 .news span{
