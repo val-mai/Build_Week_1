@@ -1,13 +1,17 @@
 /* GENERAL */
+:root {
+    --arancione: #ff540c;
+    --marroncino: #968868;
+    --button: #7ec3bb;
+    --grigio: #b0b0b0;
+  }
 
-
-/* #ff540c  Arancio*/
-
-/* #958667  Marroncino*/
-
-/* #7ec3bb  Bottone*/
-
-/* #b0b0b0 Grigio bottoni social */
+ body {
+    @font-face {
+        font-family: myfont;
+        src: url(../fonts/ufonts.com_tw-cen-mt.ttf);
+      }
+ }
 
 /* Header */
 
