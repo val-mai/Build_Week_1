@@ -1,17 +1,4 @@
 /* GENERAL */
-:root {
-    --arancione: #ff540c;
-    --marroncino: #968868;
-    --button: #7ec3bb;
-    --grigio: #b0b0b0;
-  }
-
- body {
-    @font-face {
-        font-family: myfont;
-        src: url(../fonts/ufonts.com_tw-cen-mt.ttf);
-      }
- }
 
 /* @media  480 */
 
@@ -22,5 +9,63 @@
 
 
 /* Main */
+
+/*MENU PIATTI E PREZZI: GIORDANO*/
+div.Menu{
+  padding: 50px 15px 50px 15px;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+}
+div.Menu span{
+  color: #ff540c;
+  font-weight: bold;
+}
+div.Menu p{
+  color: #b0b0b0;
+  line-height: 1.3rem;
+}
+
+div.titolomenu{
+  text-align: center;
+  margin-bottom: 50px;
+}
+div.titolomenu hr{
+  margin: 30px auto 30px auto;
+  width: 120px;
+  border-top: 1px solid #968868;
+}
+
+div.lista{
+  padding-top: 30px;
+}
+div.lista h2{
+  padding: 30px 0 40px 0;
+}
+div.lista ul{
+  list-style: none;
+}
+div.oggettolista{
+  padding: 20px 0 20px 0;
+}
+div.nomepiatto h3{
+  margin: auto auto 15px auto;
+}
+div.nomepiatto span{
+  color: #968868;
+}
+div.oggettolista p{
+  margin-top: 15px;
+}
+
+div.moreinfo {
+  float: right;
+  margin-bottom: 30px;
+}
+div.moreinfo button{
+  border: 1px solid #ff540c;
+  color: #ff540c;
+  height: 3rem;
+  width: 10rem;
+}
 
 /* Footer */
