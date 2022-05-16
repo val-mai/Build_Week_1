@@ -4,6 +4,7 @@
     --marroncino: #968868;
     --button: #7ec3bb;
     --grigio: #b0b0b0;
+    --bianco: #fff;
 }
 
 
@@ -24,6 +25,10 @@ span {
 
 h2 {
     font-size: 1.4em;
+}
+
+hr{
+  
 }
 
 /* @media  480 */
@@ -181,4 +186,48 @@ figure {
     background-color: var(--arancione);
 }
 
+/* ====== News CSS ====== */
+.news {
+  text-align: center;
+  background: url("../images/subscribe-bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.news h1{
+  color: var(--bianco);
+  font-size: 36px;
+}
+
+.news span{
+  font-size: 45px;
+  color: #ff530a;
+  font-weight: 600;
+}
+
+.news p{
+  padding: 25px;
+  color: var(--bianco);
+}
+
+.news input{
+  width: 450px;
+  background: var(--bianco);
+  opacity: 0.9;
+  border: none;
+  height: 60px;
+}
+
+
+.news button{
+  width: 200px;
+  height: 60px;
+  border: none;
+  background: var(--button);
+  color: var(--bianco);
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
 /* Footer */
