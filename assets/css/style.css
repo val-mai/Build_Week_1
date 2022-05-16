@@ -124,9 +124,21 @@ nav div ul li {
   text-align: center;
   padding: 4rem 0;
 }
- .aboutUs hr {
-   width: 20%;
- }
+
+.aboutUs h1 {
+    position: relative;
+    padding-bottom: 2em;
+}
+
+.aboutUs h1::before{
+    content: "";
+    position: absolute;
+    left: 30%;
+    bottom: 0;
+    width: 40%;
+    height: 1px;
+    background: #C8C1B3;
+}
 
 /*MENU PIATTI E PREZZI: GIORDANO*/
 div.Menu{
@@ -147,11 +159,21 @@ div.titolomenu{
   text-align: center;
   margin-bottom: 50px;
 }
-div.titolomenu hr{
-  margin: 30px auto 30px auto;
-  width: 120px;
-  border-top: 1px solid #968868;
+
+div.titolomenu h1 {
+    position: relative;
+    padding-bottom: 2em;
 }
+
+div.titolomenu h1::before{
+        content: "";
+        position: absolute;
+        left: 30%;
+        bottom: 0;
+        width: 40%;
+        height: 1px;
+        background: #C8C1B3;
+    }
 
 div.lista{
   padding-top: 30px;
