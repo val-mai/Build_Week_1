@@ -135,10 +135,7 @@ div.Menu{
   background-color: rgb(255, 255, 255);
   margin-bottom: 30px;
 }
-div.Menu span{
-  color: #ff540c;
-  font-weight: bold;
-}
+
 div.Menu p{
   color: #b0b0b0;
   line-height: 1.3rem;
@@ -289,12 +286,6 @@ figure {
 
 .news h1{
   color: var(--bianco);
-}
-
-.news span{
-  font-size: 45px;
-  color: #ff530a;
-  font-weight: 600;
 }
 
 .news p{
