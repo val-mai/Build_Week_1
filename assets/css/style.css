@@ -37,14 +37,11 @@ h2 {
 /* Header */
 header {
     box-sizing: border-box;
-
 }
 
 header div {
     box-sizing: content-box;
     background: no-repeat center;
-
-
 }
 
 header div img {
