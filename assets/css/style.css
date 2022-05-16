@@ -133,6 +133,7 @@ div.Menu{
   padding: 50px 15px 50px 15px;
   box-sizing: border-box;
   background-color: rgb(255, 255, 255);
+  margin-bottom: 30px;
 }
 div.Menu span{
   color: #ff540c;
@@ -177,7 +178,6 @@ div.oggettolista p{
 
 div.moreinfo {
   float: right;
-  margin-bottom: 30px;
 }
 div.moreinfo button{
   border: 1px solid #ff540c;
