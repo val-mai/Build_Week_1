@@ -4,9 +4,12 @@
     --marroncino: #968868;
     --button: #7ec3bb;
     --grigio: #b0b0b0;
+    --grigio-slider: #dadada;
+    --grigio-chiaro: #f6f6f6;
     --bianco: #fff;
-}
+  }
 
+ *{box-sizing: border-box;}
 
 @font-face {
     font-family: mioFont;
@@ -30,8 +33,100 @@ h2 {
 /* @media  480 */
 
 /* Header */
+header {
+  box-sizing: border-box;
+  
+}
+header div {
+  box-sizing: content-box;
+  background: no-repeat center;
+ 
+  
+}
+header div img {
+  content: "";
+  background-color: black;
+  opacity: 0.7;
+}
+nav div {
+  margin-left: 3rem;
+}
+nav div ul {
+  list-style: none;
+}
+nav div ul li {
+  margin-bottom: 1.5rem;
+}
+
+
 
 /* Main */
+
+/* Slider */
+.home {
+  padding: 2rem 0;
+}
+
+.home div:first-child {
+  display: flex ;
+  justify-content: space-between;
+}
+
+.home button {
+  background-color: none;
+  border: none;
+  color: var(--marroncino);
+  font-size: 2rem;
+}
+
+#slider {
+  padding: 1rem 0;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  overflow: hidden;
+}
+
+#slider img {
+  width: 50%;
+  border-radius: 5px;
+  padding-bottom: 2rem;
+}
+
+#dots {
+  display: flex;
+  justify-content: center;
+}
+
+.dot {
+  background-color: var(--grigio-slider);  
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  margin: 0 0.2rem;
+}
+
+.dot:focus {
+  background-color: var(--arancione);
+}
+
+/* #dots button:first-child{
+  background-color: var(--arancione);
+}
+
+#dots button:first-child {
+  background-color: var(--grigio-chiaro);
+} */
+
+/* About us */
+.aboutUs {
+  background-color: var(--grigio-chiaro);
+  text-align: center;
+  padding: 4rem 0;
+}
+ .aboutUs hr {
+   width: 20%;
+ }
 
 /*MENU PIATTI E PREZZI: GIORDANO*/
 div.Menu{
