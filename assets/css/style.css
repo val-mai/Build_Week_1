@@ -145,11 +145,9 @@ div.Menu{
   padding: 50px 15px 50px 15px;
   box-sizing: border-box;
   background-color: rgb(255, 255, 255);
+  margin-bottom: 30px;
 }
-div.Menu span{
-  color: #ff540c;
-  font-weight: bold;
-}
+
 div.Menu p{
   color: #b0b0b0;
   line-height: 1.3rem;
@@ -199,7 +197,6 @@ div.oggettolista p{
 
 div.moreinfo {
   float: right;
-  margin-bottom: 30px;
 }
 div.moreinfo button{
   border: 1px solid #ff540c;
@@ -311,12 +308,6 @@ figure {
 
 .news h1{
   color: var(--bianco);
-}
-
-.news span{
-  font-size: 45px;
-  color: #ff530a;
-  font-weight: 600;
 }
 
 .news p{
