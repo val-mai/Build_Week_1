@@ -23,14 +23,15 @@
         </div> <!-- header -->
         
         <div class="container">
+        <label for="menuButton" id="menuMobile"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="menuButton">
         <nav>
             <div>
-            <img id="logo" src="assets/images/logo.png" alt="logo">
-             <label for="menuButton" id="menuMobile"><i class="fas fa-bars"></i></label>
-             <input type="checkbox" id="menuButton">
+                <img id="logo" src="assets/images/logo.png" alt="logo">
             </div>
             
-            <div>                
+            
+            <div class="burger">                
                 <ul>
                     <li>HOME</li>
                     <li>ABOUT US</li>
@@ -52,25 +53,27 @@
             <div class="container">
                 <div>
                     <h3>Featured <span>works</span></h3>
-                    <button><i class="fa-solid fa-angle-right"></i></button>
+                    <button id="next"><i class="fa-solid fa-angle-right"></i></button>
                 </div>
 
                 <div id="slider">
-                    <img src="assets/images/slider/slider-img-1.jpg" alt="brownies">
-                    <img src="assets/images/slider/slider-img-2.jpg" alt="ravioli">
-                    <img src="assets/images/slider/slider-img-3.jpg" alt="arrosto">
-                    <img src="assets/images/slider/slider-img-4.jpg" alt="crepes">
-                    <img src="assets/images/slider/slider-img-1.jpg" alt="brownies">
-                    <img src="assets/images/slider/slider-img-2.jpg" alt="ravioli">
-                    <img src="assets/images/slider/slider-img-3.jpg" alt="arrosto">
-                    <img src="assets/images/slider/slider-img-4.jpg" alt="crepes">
+                    <div id="slides">
+                        <img src="assets/images/slider/slider-img-1.jpg" id="slide1" alt="brownies">
+                        <img src="assets/images/slider/slider-img-2.jpg" id="slide2" alt="ravioli">
+                        <img src="assets/images/slider/slider-img-3.jpg" id="slide3" alt="arrosto">
+                        <img src="assets/images/slider/slider-img-4.jpg" id="slide4" alt="crepes">
+                        <img src="assets/images/slider/slider-img-1.jpg" id="slide5" alt="brownies">
+                        <img src="assets/images/slider/slider-img-2.jpg" id="slide6" alt="ravioli">
+                        <img src="assets/images/slider/slider-img-3.jpg" id="slide7" alt="arrosto">
+                        <img src="assets/images/slider/slider-img-4.jpg" id="slide8" alt="crepes">
+                    </div>
                 </div>
-
+                
                 <div id="dots">
-                    <button class="dot"></button>
-                    <button class="dot"></button>
-                    <button class="dot"></button>
-                    <button class="dot"></button>
+                    <a href="#slide1"></a>
+                    <a href="#slide3"></a>
+                    <a href="#slide5"></a>
+                    <a href="#slide7"></a>
                 </div>
             </div>
         </div>
@@ -277,33 +280,33 @@
         <div class="container">
             <div>
                 <h3>contact <span>INFO</span></h3>
-                <div><i class="fa-solid fa-phone"></i><span> Telefone</span>
-                    <p>(000) 123 456 78- (000) 123 4567 89</p>
+                <div><i class="fa-solid fa-phone"></i><span>Telefone</span>
+                    <p class="footerP">(000) 123 456 78- (000) 123 4567 89</p>
                 </div>
                 <div><i class="fa-solid fa-location-dot"></i><span>Address</span>
                     <address>2046 Blue Spruce Lane Laurel Canada</address>
                 </div>
                 <div><i class="fa-solid fa-envelope"></i><span>E mail</span>
-                    <p>rest@gmail.com - rest@mail.ru</p>
+                    <p class="footerP">rest@gmail.com - rest@mail.ru</p>
                 </div>
             </div>
-            <div>
+            <div class="container2">
                 <H3>latest <span>BLOG POSTS</span></H3>
                 <span>Nov 9-2014</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adip iscing elit. Curabitur ut blandit sapien</p>
+                <p class="footerP">Lorem ipsum dolor sit amet, consectetur adip iscing elit. Curabitur ut blandit sapien</p>
                 <span>Sep 8-2014</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adip iscing elit. Curabitur ut blandit sapien</p>
+                <p class="footerP">Lorem ipsum dolor sit amet, consectetur adip iscing elit. Curabitur ut blandit sapien</p>
             </div>
             <h3>photo <span>STREAM</span></h3>
-            <div>
+            <div class="container3">
                 <div><img src="assets/images/photo/photo-1.jpg" alt="foto1"></div>
                 <div><img src="assets/images/photo/photo-2.jpg" alt="foto2"></div>
                 <div><img src="assets/images/photo/photo-3.jpg" alt="foto3"></div>
                 <div><img src="assets/images/photo/photo-4.jpg" alt="foto4"></div>
             </div>
             <div>
-                <h3>Follow <span>US</span></h3>
-                <ul>
+                <h5>Follow <span>US</span></h5>
+                <ul class="container4">
                     <li>
                         <a href="#"><i class="fa-brands fa-twitter"></i></a>
                     </li>
@@ -317,7 +320,7 @@
                     </li>
                 </ul>
             </div>
-            <div>
+            <div class="footerP">
                 <p>Copyright &copy; 2014 - All Rights Reserved.Design and Developed By <a
                         href="https://demo.themefisher.com"><span>Themefisher</span></a></p>
             </div>
