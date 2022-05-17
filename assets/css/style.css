@@ -156,24 +156,30 @@ nav div ul li {
 .home .container div{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-
-.home button {
-    background-color: none;
+#next {
+    background-color: var(--bianco);
     border: none;
     color: var(--marroncino);
-    font-size: 2rem;
+    font-size: 1.9rem;
 }
 
 #slider {
     padding: 1rem 0;
     width: 100%;
     margin: 0 auto;
-    display: flex;
-    overflow: hidden;
 }
 
-#slider img {
+#slides {
+    display: flex;
+    overflow: hidden;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+#slides img {
     width: 50%;
     border-radius: 5px;
     padding-bottom: 2rem;
@@ -184,7 +190,7 @@ nav div ul li {
     justify-content: center;
 }
 
-.dot {
+#dots a:link {
     background-color: var(--grigio-slider);
     width: 0.7rem;
     height: 0.7rem;
@@ -192,7 +198,7 @@ nav div ul li {
     margin: 0 0.2rem;
 }
 
-.dot:focus {
+#dots a:active, #dots a:focus {
     background-color: var(--arancione);
 }
 
@@ -213,7 +219,7 @@ nav div ul li {
 
 .aboutUs h2 {
     position: relative;
-    padding-bottom: 2em;
+    padding: 2em 0;
 }
 
 /*MENU PIATTI E PREZZI: GIORDANO*/
