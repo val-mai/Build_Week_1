@@ -7,6 +7,8 @@
     --grigio-slider: #dadada;
     --grigio-chiaro: #f6f6f6;
     --bianco: #fff;
+    --nero:#2e2e2e;
+    --grigiop: #949494;
 }
 
 * {
@@ -22,22 +24,62 @@ body {
     font-family: mioFont;
 }
 
-span {
-    color: var(--arancione);
-    font-size: 1.3em;
-    font-weight: bold;
+h2 {
+    font-size: 1.35rem;
+    text-align: center;
+    color: var(--nero);
+    text-transform: capitalize;
+    line-height: 1.1;
 }
 
-h2 {
-    font-size: 1.4em;
+.Menu h2, .Contact h2 {
+    text-transform: none;
+}
+
+.Menu h2 span, .Contact h2 span {
+    text-transform: uppercase;
+}
+
+h2::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-4rem);
+    bottom: 0;
+    width: 8rem;
+    height: 1px;
+    background: #C8C1B3;
+}
+
+h3 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--nero);
+}
+
+h3 span,h2 span {
+    color: var(--arancione);
+}
+
+h2 span {
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+
+p {
+    color: var(--grigiop);
+    padding-top: 2.7rem;
+    line-height: 1.6;
+}
+
+.container {
+    padding: 0 1rem;
 }
 
 /* @media  480 */
 
 /* Header */
-header {
-    box-sizing: border-box;
-}
 
 header div{
     box-sizing: content-box;
@@ -86,7 +128,7 @@ nav div ul li {
     padding: 2rem 0;
 }
 
-.home div:first-child {
+.home .container div{
     display: flex;
     justify-content: space-between;
 }
@@ -151,16 +193,11 @@ nav div ul li {
 
 /*MENU PIATTI E PREZZI: GIORDANO*/
 div.Menu {
-    padding: 50px 15px 50px 15px;
+    padding: 50px 0px;
     box-sizing: border-box;
     background-color: rgb(255, 255, 255);
     margin-bottom: 30px;
     margin-top: 60px;
-}
-
-div.Menu p {
-    color: #b0b0b0;
-    line-height: 1.3rem;
 }
 
 div.titolomenu {
@@ -172,11 +209,6 @@ div.titolomenu h2 {
     position: relative;
     padding-bottom: 2em;
     font-size: 1.4rem;
-}
-
-div.titolomenu p{
-    margin-top: 30px;
-    padding: 10px;
 }
 
 div.lista {
@@ -239,27 +271,12 @@ div.moreinfo button {
     box-shadow: inset 10px 10px 250px 10px #444040;
 }
 
-.blog .container {
-    margin: 0 auto;
-    width: 95%;
-}
-
 .blog .container h2 {
     color: white;
     padding-bottom: 3rem;
     position: relative;
 }
 
-h2::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-4rem);
-    bottom: 0;
-    width: 8rem;
-    height: 1px;
-    background: #C8C1B3;
-}
 
 .blog h4 {
     font-size: 1.3em;
