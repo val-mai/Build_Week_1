@@ -39,15 +39,28 @@ header {
     box-sizing: border-box;
 }
 
-header div {
+header div{
     box-sizing: content-box;
-    background: no-repeat center;
 }
 
-header div img {
+.banner{
+    height: 150px;
+    width: 100%;
+    background-image: url(../images/header.jpg);
+    background-size: cover;
+    position: relative;
+/*     box-shadow: inset 10px 10px 100px 10px #5a5454; */
+}
+
+.banner::before{
     content: "";
-    background-color: black;
-    opacity: 0.7;
+    background: url(../images/overlay-pattern2.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
 }
 
 nav div {
@@ -129,19 +142,9 @@ nav div ul li {
     padding: 4rem 0;
 }
 
-.aboutUs h1 {
+.aboutUs h2 {
     position: relative;
     padding-bottom: 2em;
-}
-
-.aboutUs h1::before {
-    content: "";
-    position: absolute;
-    left: 30%;
-    bottom: 0;
-    width: 40%;
-    height: 1px;
-    background: #C8C1B3;
 }
 
 /*MENU PIATTI E PREZZI: GIORDANO*/
@@ -150,6 +153,7 @@ div.Menu {
     box-sizing: border-box;
     background-color: rgb(255, 255, 255);
     margin-bottom: 30px;
+    margin-top: 60px;
 }
 
 div.Menu p {
@@ -162,19 +166,16 @@ div.titolomenu {
     margin-bottom: 50px;
 }
 
-div.titolomenu h1 {
+div.titolomenu h2 {
     position: relative;
     padding-bottom: 2em;
+    font-size: 1.4rem;
 }
 
-div.titolomenu h1::before {
-    content: "";
-    position: absolute;
-    left: 30%;
-    bottom: 0;
-    width: 40%;
-    height: 1px;
-    background: #C8C1B3;
+
+div.titolomenu p{
+    margin-top: 30px;
+    padding: 10px;
 }
 
 div.lista {
@@ -232,6 +233,9 @@ div.moreinfo button {
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 10px 10px 250px 10px #444040;
 }
 
 .blog .container {
@@ -245,12 +249,13 @@ div.moreinfo button {
     position: relative;
 }
 
-.blog .container h2::before {
+h2::before {
     content: "";
     position: absolute;
-    left: 30%;
+    left: 50%;
+    transform: translateX(-4rem);
     bottom: 0;
-    width: 150px;
+    width: 8rem;
     height: 1px;
     background: #C8C1B3;
 }
@@ -363,20 +368,10 @@ figure {
     background-size: cover;
 }
 
-.news h1 {
+.news h2 {
     color: var(--bianco);
     position: relative;
     padding-bottom: 2em;
-}
-
-.news h1::before {
-    content: "";
-    position: absolute;
-    left: 30%;
-    bottom: 0;
-    width: 40%;
-    height: 1px;
-    background: #C8C1B3;
 }
 
 .news p {
