@@ -313,9 +313,10 @@ div.moreinfo button {
 .blog h4::before {
     content: "";
     position: absolute;
-    left: 40%;
+    left: 50%;
     bottom: 0;
-    width: 25%;
+    width: 4rem;
+    transform: translateX(-2rem);
     height: 1px;
     background: #CBC4B5;
 }
@@ -336,12 +337,19 @@ div.moreinfo button {
     width: 100%;
 }
 
+hr {
+    border: none;
+    height: 1px;
+    background-color: var(--grigio);
+}
+
 figure {
     overflow: hidden;
 }
 
-.blog img:hover {
+.blog .singlecard:hover img {
     transform: scale(1.2) rotate(10deg);
+    transition: 1s ease-out;
 }
 
 .didascalie {
@@ -359,12 +367,22 @@ figure {
     border: none;
     color: white;
     background-color: var(--arancione);
+    box-sizing: border-box;
 }
 
-/* @media screen and (min-width:768px) {
+.blog button:hover {
+    background-color: transparent;
+    border: 1px solid var(--arancione);
+    border-radius: 5px;
+    color: var(--arancione);
+}
+
+@media screen and (min-width:768px)/*  and (max-width:991px) */ {
 
     .blog .container {
+        box-sizing: content-box;
         width: 720px;
+        margin: 0 auto;
     }
 
     .singlecard {
@@ -399,7 +417,7 @@ figure {
     }
 
 }
- */
+
  
 /* ====== News CSS ====== */
 .news {
