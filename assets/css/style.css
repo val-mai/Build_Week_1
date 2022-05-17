@@ -603,7 +603,10 @@ body > footer:nth-child(3) > div:nth-child(1) > h3:nth-child(3) {
 .footer3 {
     display: flex;
     justify-content: space-evenly;
+    margin-top: 18px;
     padding-right: 100px;
+    margin-left: -21px;
+    margin-bottom: 36px;
 }
 div h5 {
     font-size: 1.4rem;
@@ -612,8 +615,34 @@ div h5 {
     display: flex;
     justify-content: space-evenly;
     padding-right: 200px;
+    margin-top: 0.7rem;
+    margin-left: -1.4rem;
+    margin-bottom: 5rem;
 }
 .footerP p {
+    text-align: center;
     background-color: #e9e9e9;
-    
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-right: 1.3rem;
+    color:#454545;
+    padding-top: 11px;
+    padding-bottom: 20px;
 }
+.footerP a {
+    color: #ff540c;
+}
+.footer4 li i {
+    background-color: #b0b0b0;
+    border-radius: 100%;
+    padding: 0.6rem;
+    line-height: 1rem;
+    color: white; 
+    padding-top: 0.8rem;
+    margin-bottom: 3rem;
+}
+.fa-facebook-f {
+    padding-left: 0.8rem !important;
+    padding-right: 0.8rem !important;
+}
+   
