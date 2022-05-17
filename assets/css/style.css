@@ -166,24 +166,30 @@ nav div ul li {
 .home .container div{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-
-.home button {
-    background-color: none;
+#next {
+    background-color: var(--bianco);
     border: none;
     color: var(--marroncino);
-    font-size: 2rem;
+    font-size: 1.9rem;
 }
 
 #slider {
     padding: 1rem 0;
     width: 100%;
     margin: 0 auto;
-    display: flex;
-    overflow: hidden;
 }
 
-#slider img {
+#slides {
+    display: flex;
+    overflow: hidden;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+#slides img {
     width: 50%;
     border-radius: 5px;
     padding-bottom: 2rem;
@@ -194,7 +200,7 @@ nav div ul li {
     justify-content: center;
 }
 
-.dot {
+#dots a:link {
     background-color: var(--grigio-slider);
     width: 0.7rem;
     height: 0.7rem;
@@ -202,7 +208,7 @@ nav div ul li {
     margin: 0 0.2rem;
 }
 
-.dot:focus {
+#dots a:active, #dots a:focus {
     background-color: var(--arancione);
 }
 
@@ -223,13 +229,13 @@ nav div ul li {
 
 .aboutUs h2 {
     position: relative;
-    padding-bottom: 2em;
+    padding: 2em 0;
 }
 
 /*MENU PIATTI E PREZZI: GIORDANO*/
 div.Menu {
+    position: relative;
     padding: 50px 0px;
-    box-sizing: border-box;
     background-color: rgb(255, 255, 255);
     margin-bottom: 30px;
     margin-top: 60px;
@@ -248,10 +254,12 @@ div.titolomenu h2 {
 
 div.lista {
     padding-top: 30px;
+    padding-bottom: 40px;
+    margin-top: 80px;
+    margin-bottom: 60px;
 }
-
-div.lista h4{
-    margin-bottom: 10px;
+div.lista h3{
+    padding-bottom: 35px;
 }
 
 div.lista ul {
@@ -269,26 +277,55 @@ div.oggettolista {
 }
 
 div.nomepiatto h4 {
-    margin: auto auto 15px auto;
+    font-size: 1.5rem;
+    color: #333333;
 }
 
 div.nomepiatto span {
-    color: #968868;
+    color: #938463;
+    font-size: 0.9rem;
+    padding-top: 10px;
+    display: block;
+    float: none;
 }
 
 div.oggettolista p {
-    margin-top: 15px;
+    margin-top: 12px;
+    padding-top: 0;
+    font-size: small;
 }
 
 div.moreinfo {
     float: right;
+    padding-top: 30px;
 }
 
 div.moreinfo button {
     border: 1px solid #ff540c;
     color: #ff540c;
-    height: 3rem;
-    width: 10rem;
+    height: 4.9rem;
+    width: 17rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+div.moreinfo button:hover{
+    animation-name: colorbutton;
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+    cursor: pointer;
+}
+
+@keyframes colorbutton{
+    0% {
+        background-color: white;
+        color: #ff540c;
+    }
+    100% {
+        background-color: #ff540c;
+        color: white;
+    }
 }
 
 /* Blog */
@@ -323,9 +360,10 @@ div.moreinfo button {
 .blog h4::before {
     content: "";
     position: absolute;
-    left: 40%;
+    left: 50%;
     bottom: 0;
-    width: 25%;
+    width: 4rem;
+    transform: translateX(-2rem);
     height: 1px;
     background: #CBC4B5;
 }
@@ -346,12 +384,19 @@ div.moreinfo button {
     width: 100%;
 }
 
+hr {
+    border: none;
+    height: 1px;
+    background-color: var(--grigio);
+}
+
 figure {
     overflow: hidden;
 }
 
-.blog img:hover {
+.blog .singlecard:hover img {
     transform: scale(1.2) rotate(10deg);
+    transition: 1s ease-out;
 }
 
 .didascalie {
@@ -369,12 +414,22 @@ figure {
     border: none;
     color: white;
     background-color: var(--arancione);
+    box-sizing: border-box;
 }
 
-/* @media screen and (min-width:768px) {
+.blog button:hover {
+    background-color: transparent;
+    border: 1px solid var(--arancione);
+    border-radius: 5px;
+    color: var(--arancione);
+}
+
+@media screen and (min-width:768px)/*  and (max-width:991px) */ {
 
     .blog .container {
+        box-sizing: content-box;
         width: 720px;
+        margin: 0 auto;
     }
 
     .singlecard {
@@ -409,7 +464,7 @@ figure {
     }
 
 }
- */
+
  
 /* ====== News CSS ====== */
 .news {
