@@ -382,12 +382,13 @@ figure {
 }
 
 .news p {
+    width: 80%;
     padding-top: 1.8em;
     color: var(--bianco);
 }
 
 .news input {
-    width: 450px;
+    width: 80%;
     background: var(--bianco);
     opacity: 0.9;
     border: none;
@@ -396,7 +397,7 @@ figure {
 
 
 .news button {
-    width: 200px;
+    width: 30%;
     height: 60px;
     border: none;
     background: var(--button);
