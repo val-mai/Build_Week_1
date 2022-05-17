@@ -312,6 +312,22 @@ div.moreinfo button:hover{
     }
 }
 
+@media screen and (min-width: 800px){
+    div.nomepiatto span{
+        float: right;
+    }
+    div.nomepiatto h4{
+        display: inline-block;
+        position: relative;
+        z-index: 99;
+        background: #fff;
+    }
+    div.nomepiatto{
+        border-bottom: 1px dotted #2e2e2e;
+    }
+}
+
+
 /* Blog */
 
 .blog {
