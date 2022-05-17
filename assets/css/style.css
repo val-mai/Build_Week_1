@@ -80,17 +80,8 @@ p {
 /* @media  480 */
 
 /* Header */
-<<<<<<< HEAD
-header {
-    box-sizing: border-box;
-    
-}
-header nav {
-    position: relative;
-=======
 
-header div{
->>>>>>> refs/remotes/origin/main
+header nav div{
     box-sizing: content-box;
     z-index: 1600;
     top: -83px;
