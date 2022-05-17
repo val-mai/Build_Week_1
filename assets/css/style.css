@@ -222,6 +222,9 @@ div.moreinfo button {
     height: 3rem;
     width: 10rem;
 }
+div.moreinfo:hover{
+    
+}
 
 /* Blog */
 
