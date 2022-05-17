@@ -328,6 +328,22 @@ div.moreinfo button:hover{
     }
 }
 
+@media screen and (min-width: 800px){
+    div.nomepiatto span{
+        float: right;
+    }
+    div.nomepiatto h4{
+        display: inline-block;
+        position: relative;
+        z-index: 99;
+        background: #fff;
+    }
+    div.nomepiatto{
+        border-bottom: 1px dotted #2e2e2e;
+    }
+}
+
+
 /* Blog */
 
 .blog {
@@ -341,6 +357,7 @@ div.moreinfo button:hover{
     justify-content: center;
     align-items: center;
     box-shadow: inset 10px 10px 250px 10px #444040;
+    padding-bottom: 4em;
 }
 
 .blog .container h2 {
@@ -409,19 +426,19 @@ figure {
 
 .blog button {
     margin: 4em;
+    margin-bottom: 0;
     margin-left: 0;
     padding: 2em 5em;
-    border: none;
+    border: solid 1px var(--arancione);
     color: white;
     background-color: var(--arancione);
-    box-sizing: border-box;
 }
 
 .blog button:hover {
     background-color: transparent;
-    border: 1px solid var(--arancione);
     border-radius: 5px;
     color: var(--arancione);
+    cursor: pointer;
 }
 
 @media screen and (min-width:768px)/*  and (max-width:991px) */ {
@@ -434,6 +451,7 @@ figure {
 
     .singlecard {
         display: flex;
+        margin: 0;
         position: relative;
     }
 
@@ -445,6 +463,7 @@ figure {
         height: 30px;
         background: #fff;
         transform: rotate(45deg);
+        z-index: 10;;
     }
 
     .didascalie {
@@ -461,6 +480,10 @@ figure {
 
     .blog hr {
         display: none;
+    }
+
+    .blog .button {
+        text-align: center;
     }
 
 }
@@ -520,7 +543,7 @@ figure {
      padding-top: 0;
      font-size: 0.9rem;
  }
- div.container div div {
+ footer div.container div div {
      margin-top: 1rem;
  }
  .footerP {
@@ -577,7 +600,7 @@ div h5 {
     justify-content: space-evenly;
     padding-right: 200px;
 }
-div.container div.footerP p {
+.footerP p {
     background-color: #e9e9e9;
     
 }
