@@ -32,11 +32,11 @@ h2 {
     line-height: 1.1;
 }
 
-.Menu h2, .Contact h2 {
+.Menu h2, #contactUs h2 {
     text-transform: none;
 }
 
-.Menu h2 span, .Contact h2 span {
+.Menu h2 span, #contactUs h2 span {
     text-transform: uppercase;
 }
 
@@ -512,6 +512,8 @@ figure {
     #blog hr {
         display: none;
     }
+
+
 }
 
 @media screen and (min-width:992px) {
@@ -562,7 +564,7 @@ figure {
 
 
 
-.news {
+#news {
     padding: 100px 0px;
     text-align: center;
     background: url("../images/subscribe-bg.jpg");
@@ -571,7 +573,7 @@ figure {
     background-size: cover;
     position: relative;
 }
-.news::before {
+#news::before {
     content: "";
     position: absolute;
     left: 0;
@@ -584,7 +586,7 @@ figure {
     opacity: 0.3;
 }
 
-.news h2 {
+#news h2 {
     color: var(--bianco);
     position: relative;
     padding-bottom: 2em;
@@ -593,11 +595,11 @@ figure {
     font-size: 2em;
 }
 
-.news span{
+#news span{
     text-transform: lowercase;
 }
 
-.news p {
+#news p {
     margin-bottom: 1.8em;
     color: var(--bianco);
     font-weight: 600;
@@ -605,7 +607,7 @@ figure {
     letter-spacing: 1px;
 }
 
-.news input {
+#news input {
     width: 100%;
     background: var(--bianco);
     opacity: 0.9;
@@ -616,7 +618,7 @@ figure {
 }
 
 
-.news button {
+#news button {
     width: 30%;
     height: 60px;
     border: none;
@@ -629,31 +631,31 @@ figure {
     position: relative;
 }
 
-.news .container{
+#news .container{
     padding: 100px 16px;
 }
 
 /* ====== Contact Css ====== */
-.contact h2, .contact h3{
+#contactUs h2, #contactUs h3{
     position: relative;
     padding-bottom: 2em;
 }
 
-.contact form input{
+#contactUs form input{
     height: 50px;
     border: 1px solid var(--grigio);
     margin-bottom: 10px;
     width: 100%;
 }
 
-.contact form textarea{
+#contactUs form textarea{
     height: 140px;
     border: 1px solid var(--grigio);
     margin-bottom: 10px;
     width: 100%;
 }
 
-.contact a{
+#contactUs a{
     background: var(--arancione);
     float: right;
     color: var(--bianco);
