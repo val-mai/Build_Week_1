@@ -414,6 +414,7 @@ div.moreinfo button:hover{
 
 #blog img {
     width: 100%;
+    transition: 1s ease-out;
 }
 
 hr {
@@ -428,7 +429,6 @@ figure {
 
 #blog .singlecard:hover img {
     transform: scale(1.2) rotate(10deg);
-    transition: 1s ease-out;
 }
 
 .didascalie {
@@ -445,6 +445,7 @@ figure {
     color: white;
     background-color: var(--arancione);
     position: relative;
+    transition: 300ms ease-out;
 }
 
 #buttonblog:hover {
@@ -454,7 +455,7 @@ figure {
     cursor: pointer;
 }
 
-@media screen and (min-width:768px)/*  and (max-width:991px) */ {
+@media screen and (min-width:768px) and (max-width:991px) {
 
     #blog .container {
         box-sizing: content-box;
@@ -499,6 +500,46 @@ figure {
         text-align: center;
     }
 
+}
+
+@media screen and (min-width:992px) {
+    
+    #blog .container {
+        box-sizing: content-box;
+        width: 940px;
+        margin: 0 auto;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .singlecard {
+        display: flex;
+        width: 50%;
+        margin: 0;
+        position: relative;
+    }
+
+    .didascalie {
+        width: 50%;
+    }
+    
+    #blog hr {
+        display: none;
+    }
+
+    .rombo {
+        position: absolute;
+        left: 46.8%;
+        top: 20%;
+        width: 30px;
+        height: 30px;
+        background: #fff;
+        transform: rotate(45deg);
+        z-index: 10;
+    }
 }
 
  
