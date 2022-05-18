@@ -108,14 +108,15 @@ header {
     top: 0;
     left: 0;
 }
+
 .fas {
     margin-top: 8px;
     padding-left: 0px;
     margin-right: 9px;
+    color: var(--arancione);
    }
    
-
-header .container{
+header .navbar{
     background-color: rgba(255, 255, 255, 0.69);
     position: sticky;
     display: flex;
@@ -124,13 +125,9 @@ header .container{
     flex-wrap: wrap;
     top: -70px;
     height: 5.2rem;
-    /* margin-left: 14px;
-    padding-bottom: 0px;
-    padding-top: 17px;
-    padding-left: 11px;
-    margin-right: 14px;
-    margin-bottom: 0px; */
+    box-sizing: border-box;
     margin-top: -83px;
+    padding: 0 1rem;
 }
 header nav {
     position: relative;
@@ -139,28 +136,13 @@ header nav {
     width: 100%;
     transition: height 0.5s ease-out;
 }
-/* header nav {
-    box-sizing: content-box;
-    background-color: rgba(255, 255, 255, 0.69);
-    margin-left: 10px;
-    margin-right: 10px;
-} */
-/* header nav div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 1.6rem;
-} */
-#menuMobile {
-    color: #ff540c;
-    font-size: 1.2rem;
-    margin: 0;
-}
+
 input#menuButton {
     display: none;
 }
+
 input#menuButton:checked + nav {
-    height: 250px;
+    height: 210px;
     background-color: rgba(255, 255, 255, 0.69);
 } 
 
@@ -171,25 +153,24 @@ input#menuButton:checked + nav {
     width: 100%;
     position: relative;
 }
+
 header nav div.burger ul li a {
     color: #2E2E2E;
     transition: .3s cubic-bezier(1.1);
+    border-bottom: 2px solid transparent;
     text-decoration: none;
     display: inline-block;
     width: 96%;
     margin-bottom: 15px;
     padding-top: 0px;
-
 }
 
-   
 nav div.burger ul li a:hover {
-    background-color: #e94c3d;
-    width: 100%;
-/*     margin-bottom: 1px; */
+    border-bottom: 2px solid var(--arancione);
+    width: 90%;
 }
 
-/* .banner::before{
+.banner::before{
     content: "";
     background: url(../images/overlay-pattern2.png);
     position: absolute;
@@ -198,26 +179,16 @@ nav div.burger ul li a:hover {
     height: 100%;
     width: 100%;
     opacity: 0.3;
-} */
-
-/* nav div {
-    margin-left: 1rem;
-    padding-top: 1rem;
-    margin-bottom: 2rem;
-
-} */
-
-nav div ul {
-    list-style: none;
-    padding-left: 19px;
-    margin-left: 10px;
-    margin-top: 21px;
 }
 
-nav div ul li {
-    margin-bottom: 1.5rem;
-    font-family: mioFont;
-    font-size: 15px;
+nav div ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    padding-left: 1rem;
+    margin-top: 10px;
+
 }
 
 /* Main */
