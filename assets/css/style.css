@@ -32,11 +32,11 @@ h2 {
     line-height: 1.1;
 }
 
-.Menu h2, .Contact h2 {
+.Menu h2, #contactUs h2 {
     text-transform: none;
 }
 
-.Menu h2 span, .Contact h2 span {
+.Menu h2 span, #contactUs h2 span {
     text-transform: uppercase;
 }
 
@@ -102,7 +102,9 @@ p {
 
 /* Header */
 header {
-    box-sizing: border-box;   
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
 }
 .logobottone {
     display: flex;
@@ -116,6 +118,12 @@ header {
 
 header nav {
     position: relative;
+    height: 0px;
+    overflow: hidden;
+    width: 100%;
+    transition: height 0.5s ease-out;
+}
+/* header nav {
     box-sizing: content-box;
     z-index: 900;
     top: -83px;
@@ -126,7 +134,6 @@ header nav {
 }
 .burger {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-right: 1.6rem;
@@ -158,7 +165,7 @@ input#menuButton:checked ~ nav {
     position: relative;
 }
 
-.banner::before{
+/* .banner::before{
     content: "";
     background: url(../images/overlay-pattern2.png);
     position: absolute;
@@ -167,7 +174,7 @@ input#menuButton:checked ~ nav {
     height: 100%;
     width: 100%;
     opacity: 0.3;
-}
+} */
 
 #logo {
     margin-left: 0.9rem;
@@ -185,7 +192,7 @@ nav div {
     padding-top: 1rem;
     margin-bottom: 2rem;
 
-}
+} */
 
 nav div ul {
     list-style: none;
@@ -336,12 +343,13 @@ div.moreinfo {
 }
 
 div.moreinfo button {
+    font-family: mioFont;
     border: 1px solid #ff540c;
     color: #ff540c;
     height: 4.9rem;
     width: 17rem;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 700;
     transition: background-color 0.3s ease-out;
 }
 
@@ -383,7 +391,11 @@ div.moreinfo button:hover{
         margin-top: 20px;
     }
 }
-
+@media screen and (min-width: 992px){
+    div.titolomenu p{
+        padding: 40px 100px 0px 100px;
+    }
+}
 
 /* Blog */
 
@@ -394,7 +406,7 @@ div.moreinfo button:hover{
     text-align: center;
     background-size: cover;
     background-attachment: fixed;
-    position: relative;
+/*     position: relative; */
     justify-content: center;
     align-items: center;
 /*     box-shadow: inset 10px 10px 250px 10px #444040; */
@@ -531,6 +543,8 @@ figure {
     #blog hr {
         display: none;
     }
+
+
 }
 
 @media screen and (min-width:992px) {
@@ -581,7 +595,7 @@ figure {
 
 
 
-.news {
+#news {
     padding: 100px 0px;
     text-align: center;
     background: url("../images/subscribe-bg.jpg");
@@ -590,7 +604,7 @@ figure {
     background-size: cover;
     position: relative;
 }
-.news::before {
+#news::before {
     content: "";
     position: absolute;
     left: 0;
@@ -603,7 +617,7 @@ figure {
     opacity: 0.3;
 }
 
-.news h2 {
+#news h2 {
     color: var(--bianco);
     position: relative;
     padding-bottom: 2em;
@@ -612,11 +626,11 @@ figure {
     font-size: 2em;
 }
 
-.news span{
+#news span{
     text-transform: lowercase;
 }
 
-.news p {
+#news p {
     margin-bottom: 1.8em;
     color: var(--bianco);
     font-weight: 600;
@@ -624,7 +638,7 @@ figure {
     letter-spacing: 1px;
 }
 
-.news input {
+#news input {
     width: 100%;
     background: var(--bianco);
     opacity: 0.9;
@@ -635,7 +649,7 @@ figure {
 }
 
 
-.news button {
+#news button {
     width: 30%;
     height: 60px;
     border: none;
@@ -648,31 +662,31 @@ figure {
     position: relative;
 }
 
-.news .container{
+#news .container{
     padding: 100px 16px;
 }
 
 /* ====== Contact Css ====== */
-.contact h2, .contact h3{
+#contactUs h2, #contactUs h3{
     position: relative;
     padding-bottom: 2em;
 }
 
-.contact form input{
+#contactUs form input{
     height: 50px;
     border: 1px solid var(--grigio);
     margin-bottom: 10px;
     width: 100%;
 }
 
-.contact form textarea{
+#contactUs form textarea{
     height: 140px;
     border: 1px solid var(--grigio);
     margin-bottom: 10px;
     width: 100%;
 }
 
-.contact a{
+#contactUs a{
     background: var(--arancione);
     float: right;
     color: var(--bianco);
