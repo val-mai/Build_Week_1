@@ -317,12 +317,13 @@ div.moreinfo {
 }
 
 div.moreinfo button {
+    font-family: mioFont;
     border: 1px solid #ff540c;
     color: #ff540c;
     height: 4.9rem;
     width: 17rem;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 700;
     transition: background-color 0.3s ease-out;
 }
 
@@ -364,7 +365,11 @@ div.moreinfo button:hover{
         margin-top: 20px;
     }
 }
-
+@media screen and (min-width: 992px){
+    div.titolomenu p{
+        padding: 40px 100px 0px 100px;
+    }
+}
 
 /* Blog */
 
