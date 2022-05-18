@@ -547,12 +547,12 @@ figure {
 /* Footer */
  div div span {
      color: #ff540c;
-     ;
+     
  }
  footer div {
      line-height: 2rem;
  }
- div.container div div p {
+ footer div.container div div p {
      padding-top: 0;
      font-size: 0.9rem;
  }
@@ -562,7 +562,7 @@ figure {
  .footerP {
     color:#474747;
  }
- div.container div div span {
+ footer div.container div div span {
      margin-left:  2rem;
      font-size: 1.2rem;
  }
@@ -571,13 +571,13 @@ figure {
      font-size: 1.2rem;
      list-style: none;
  }
- div.container div ul {
+ footer div.container div ul {
     list-style: none;
  }
- div.container div div address {
+footer div.container div div address {
      color: #474747;
  }
- div.container div h3 {
+ footer div.container div h3 {
      margin-bottom: 2.5rem;
      font-size: 1.2rem;
  }
