@@ -83,38 +83,50 @@ p {
 header {
     box-sizing: border-box;   
 }
-.burger {
-    height: 0;
-    overflow: hidden;
+.logobottone {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2rem;
     position: relative;
-    width: 100%;
-    transition: height 0.5s ease-out;
+    z-index: 1000;
+    top: -48px;
+    right: -4px;
 }
+
 header nav {
     position: relative;
     box-sizing: content-box;
-    z-index: 1600;
+    z-index: 900;
     top: -83px;
     background-color: rgba(255, 255, 255, 0.69);
     margin-left: 10px;
     margin-right: 10px;
+    height: 57px;
 }
-header nav div {
+.burger {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-right: 1.6rem;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    transition: height 0.5s ease-out;
+    bottom: -80px;
 }
 #menuMobile {
     color: #ff540c;
     font-size: 1.2rem;
+    margin-top: auto;
 }
 input#menuButton {
     display: none;
 }
 input#menuButton:checked ~ nav {
-    height: 2px;
+    height: 200px;
+    
 } 
 
 .banner {
@@ -137,8 +149,15 @@ input#menuButton:checked ~ nav {
 }
 
 #logo {
-    margin-left: -0.5rem;
-}
+    margin-left: 0.9rem;
+    margin-top: 0px;
+    z-index: 99999;
+    position: sticky;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    top: -51px;
+   }
+   
 
 nav div {
     margin-left: 1rem;
