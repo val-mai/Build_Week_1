@@ -517,8 +517,6 @@ figure {
     #blog hr {
         display: none;
     }
-
-
 }
 
 @media screen and (min-width:992px) {
@@ -615,7 +613,7 @@ figure {
 #news input {
     width: 100%;
     background: var(--bianco);
-    opacity: 0.9;
+    opacity: 0.8;
     border: none;
     height: 60px;
     margin-bottom: 20px;
@@ -624,7 +622,7 @@ figure {
 
 
 #news button {
-    width: 30%;
+    width: 200px;
     height: 60px;
     border: none;
     background: var(--button);
@@ -632,8 +630,10 @@ figure {
     font-weight: bold;
     font-size: 16px;
     text-transform: uppercase;
-    float: left;
     position: relative;
+    letter-spacing: 1px;
+    display: block;
+    margin-top: 20px;
 }
 
 #news .container{
@@ -780,4 +780,20 @@ div h5 {
 .fa-facebook-f {
     padding-left: 0.8rem !important;
     padding-right: 0.8rem !important;
+}
+
+@media screen and (min-width:768px) {
+
+    #news input{
+        width: 500px;
+    }
+    #news button{
+        width: 200px;
+        float: right;
+        margin-top: 0;
+    }
+
+    form .groupNews {
+        display: inline-block;
+    }
 }
