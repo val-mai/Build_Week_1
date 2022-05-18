@@ -578,6 +578,9 @@ figure {
 }
 
 /* ====== News CSS ====== */
+
+
+
 .news {
     padding: 100px 0px;
     text-align: center;
@@ -585,26 +588,50 @@ figure {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    position: relative;
+}
+.news::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/overlay-pattern.png") black;
+    opacity: 0.3;
 }
 
 .news h2 {
     color: var(--bianco);
     position: relative;
     padding-bottom: 2em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 2em;
+}
+
+.news span{
+    text-transform: lowercase;
 }
 
 .news p {
-    width: 80%;
-    padding-top: 1.8em;
+    margin-bottom: 1.8em;
     color: var(--bianco);
+    font-weight: 600;
+    position: relative;
+    letter-spacing: 1px;
 }
 
 .news input {
-    width: 80%;
+    width: 100%;
     background: var(--bianco);
     opacity: 0.9;
     border: none;
     height: 60px;
+    margin-bottom: 20px;
+    position: relative;
 }
 
 
@@ -614,9 +641,15 @@ figure {
     border: none;
     background: var(--button);
     color: var(--bianco);
-    font-size: 18px;
-    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 16px;
     text-transform: uppercase;
+    float: left;
+    position: relative;
+}
+
+.news .container{
+    padding: 100px 16px;
 }
 
 /* ====== Contact Css ====== */
