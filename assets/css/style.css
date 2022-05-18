@@ -287,7 +287,7 @@ div.nomepiatto span {
 div.oggettolista p {
     margin-top: 12px;
     padding-top: 0;
-    font-size: small;
+    font-size: 0.9rem;
 }
 
 div.moreinfo {
@@ -311,7 +311,14 @@ div.moreinfo button:hover{
     cursor: pointer;
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 768px){
+    div.titolomenu h2{
+        font-size: 2.4rem;
+        padding-bottom: 40px;
+    }
+    div.titolomenu span{
+        font-size: 2.9rem;
+    }
     div.nomepiatto{
         position: relative;
     }
@@ -322,16 +329,18 @@ div.moreinfo button:hover{
     div.nomepiatto h4{
         display: inline-block;
         position: relative;
-        z-index: 99;
+        z-index: 2;
         background: #fff;
     }
+    div.titolomenu p{
+        padding-top: 30px;
+    }
     div.tratteggio{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 1px;
-    border: 1px dotted #C9C9C9;
-    margin-top: 20px;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        border: 1px dotted #C9C9C9;
+        margin-top: 20px;
     }
 }
 
