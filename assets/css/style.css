@@ -104,6 +104,7 @@ p {
 header {
     box-sizing: border-box;
     position: sticky;
+    z-index: 100;
     top: 0;
     left: 0;
 }
@@ -121,7 +122,6 @@ header .container{
     justify-content:space-between;
     align-items: center;
     flex-wrap: wrap;
-    /* z-index: 99000; */
     top: -70px;
     height: 5.2rem;
     /* margin-left: 14px;
@@ -434,14 +434,14 @@ div.moreinfo button:hover{
     text-align: center;
     background-size: cover;
     background-attachment: fixed;
-    /* position: relative; */
+    position: relative;
     justify-content: center;
     align-items: center;
-/*     box-shadow: inset 10px 10px 250px 10px #444040; */
+    z-index: 5;
     padding-bottom: 4em;
 }
 
-/* #blog::before {
+#blog::before {
     content: "";
     position: absolute;
     left: 0;
@@ -452,12 +452,13 @@ div.moreinfo button:hover{
     height: 100%;
     background: url(../images/overlay-pattern.png) black;
     opacity: 0.3;
-} */
+}
 
 #blog .container h2 {
     color: white;
     padding-bottom: 3rem;
     position: relative;
+    z-index: 5;
 }
 
 
@@ -466,6 +467,7 @@ div.moreinfo button:hover{
     font-weight: bold;
     padding: 0 2.2em 1.2em;
     position: relative;
+    z-index: 5;
 }
 
 #blog h4::before {
@@ -490,6 +492,7 @@ div.moreinfo button:hover{
     width: 100%;
     margin-top: 3rem;
     position: relative;
+    z-index: 5;
 }
 
 #blog img {
@@ -519,6 +522,7 @@ figure {
 
 #buttonblog {
     position: relative;
+    z-index: 5;
     text-align: center;
     margin-top: 4em;
     height: 4.9rem;
@@ -543,6 +547,7 @@ figure {
         display: flex;
         margin: 0;
         position: relative;
+        z-index: 5;
     }
 
     .rombo {
@@ -577,6 +582,7 @@ figure {
 
     .cards {
         display: flex;
+        z-index: 5;
         flex-wrap: wrap;
     }
 
