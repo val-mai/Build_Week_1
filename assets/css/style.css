@@ -77,7 +77,28 @@ p {
     padding: 0 1rem;
 }
 
-/* @media  480 */
+@media screen and (min-width:768px) {
+
+    .container {
+        box-sizing: content-box;
+        width: 720px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width:992px) {
+    
+    .container {
+        width: 940px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+
+    .container {
+        width: 1140px;
+    }
+}
 
 /* Header */
 header {
@@ -414,6 +435,7 @@ div.moreinfo button:hover{
 
 #blog img {
     width: 100%;
+    transition: 1s ease-out;
 }
 
 hr {
@@ -428,7 +450,6 @@ figure {
 
 #blog .singlecard:hover img {
     transform: scale(1.2) rotate(10deg);
-    transition: 1s ease-out;
 }
 
 .didascalie {
@@ -438,13 +459,16 @@ figure {
 
 
 #buttonblog {
-    text-align: start;
+    position: relative;
+    text-align: center;
     margin-top: 4em;
-    padding: 2em 5em;
+    height: 4.9rem;
+    width: 17rem;
+    font-weight: bold;
     border: solid 1px var(--arancione);
     color: white;
     background-color: var(--arancione);
-    position: relative;
+    transition: 300ms ease-out;
 }
 
 #buttonblog:hover {
@@ -454,13 +478,7 @@ figure {
     cursor: pointer;
 }
 
-@media screen and (min-width:768px)/*  and (max-width:991px) */ {
-
-    #blog .container {
-        box-sizing: content-box;
-        width: 720px;
-        margin: 0 auto;
-    }
+@media screen and (min-width:768px) {
 
     .singlecard {
         display: flex;
@@ -494,14 +512,52 @@ figure {
     #blog hr {
         display: none;
     }
+}
 
-    #blog .button {
-        text-align: center;
+@media screen and (min-width:992px) {
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
     }
+
+    .singlecard {
+        width: 50%;
+    }
+
+    .didascalie {
+        width: 50%;
+    }
+
+    .rombo {
+        left: 46.8%;
+    }
+
+    #blog .blogbtn {
+        text-align: end;
+    }
+
+    #buttonblog {
+        margin-top: 0;
+    }
+
+    #buttonblog:hover {
+        border-radius: 0px;
+}
 
 }
 
- 
+@media screen and (min-width:1200px) {
+
+    #blog .container {
+        width: 1140px;
+    }
+
+    .rombo {
+        left: 47.3%;
+    }
+}
+
 /* ====== News CSS ====== */
 .news {
     padding: 100px 0px;
@@ -543,6 +599,44 @@ figure {
     letter-spacing: 2px;
     text-transform: uppercase;
 }
+
+/* ====== Contact Css ====== */
+.contact{
+    padding: 100px;
+}
+
+.contact h2, .contact h3{
+    position: relative;
+    padding-bottom: 2em;
+}
+
+.contact form input{
+    height: 50px;
+    border: 1px solid var(--grigio);
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.contact form textarea{
+    height: 140px;
+    border: 1px solid var(--grigio);
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.contact a{
+    background: var(--arancione);
+    float: right;
+    color: var(--bianco);
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 500px;
+    height: 50px;
+    padding-top: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
 
 /* Footer */
  div div span {
@@ -651,4 +745,3 @@ div h5 {
     padding-left: 0.8rem !important;
     padding-right: 0.8rem !important;
 }
-   
