@@ -20,27 +20,29 @@
     <div class="banner"></div>
     <header>
 
-            <div class="container">
-                
-                <div>
+        </div> <!-- header -->
+
+        <div class="container">
+            <div class="logobottone">
                 <img id="logo" src="assets/images/logo.png" alt="logo">
                 </div>
                 <label for="menuButton" id="menuMobile"><i class="fas fa-bars"></i></label>
-                <input type="checkbox" id="menuButton">
-                <nav>
-                    <div>
-                        <ul>
-                            <li>HOME</li>
-                            <li>ABOUT US</li>
-                            <li>BLOG</li>
-                            <li>MENU</li>
-                            <li>NEWS</li>
-                            <li>CONTACTS</li>
-                        </ul>
-                    </div>
-                </nav>
+            
             </div>
-             <!-- header -->
+            <input type="checkbox" id="menuButton">
+            <nav>
+                <div class="burger">
+                    <ul>
+                        <li><a href="#hero-area">HOME</a></li>
+                        <li><a href="#about-us">ABOUT US</a></li>
+                        <li><a href="#blog">BLOG</a></li>
+                        <li><a href="#price">MENU</a></li>
+                        <li><a href="#subscribe">NEWS</a></li>
+                        <li><a href="#contact-us">CONTACTS</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
     <!-- ====== Fine Header ====== -->
 
@@ -54,24 +56,45 @@
                     <button id="next"><i class="fa-solid fa-angle-right"></i></button>
                 </div>
 
-                <div id="slider">
-                    <div id="slides">
-                        <img src="assets/images/slider/slider-img-1.jpg" id="slide1" alt="brownies">
-                        <img src="assets/images/slider/slider-img-2.jpg" id="slide2" alt="ravioli">
-                        <img src="assets/images/slider/slider-img-3.jpg" id="slide3" alt="arrosto">
-                        <img src="assets/images/slider/slider-img-4.jpg" id="slide4" alt="crepes">
-                        <img src="assets/images/slider/slider-img-1.jpg" id="slide5" alt="brownies">
-                        <img src="assets/images/slider/slider-img-2.jpg" id="slide6" alt="ravioli">
-                        <img src="assets/images/slider/slider-img-3.jpg" id="slide7" alt="arrosto">
-                        <img src="assets/images/slider/slider-img-4.jpg" id="slide8" alt="crepes">
-                    </div>
-                </div>
+                <div class="slider">
+                    <div class="slides">
+                        <input type="radio" name="radio-btn" id="btn-slide1" />
+                        <input type="radio" name="radio-btn" id="btn-slide3" />
+                        <input type="radio" name="radio-btn" id="btn-slide5" />
+                        <input type="radio" name="radio-btn" id="btn-slide7" />
+                        
+                        <div class="first slide">
+                            <img src="assets/images/slider/slider-img-1.jpg" id="slide1" alt="brownies">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/slider/slider-img-2.jpg" id="slide2" alt="ravioli">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/slider/slider-img-3.jpg" id="slide3" alt="arrosto">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/slider/slider-img-4.jpg" id="slide4" alt="crepes">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/slider/slider-img-1.jpg" id="slide5" alt="brownies">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/slider/slider-img-2.jpg" id="slide6" alt="ravioli">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/slider/slider-img-3.jpg" id="slide7" alt="arrosto">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/slider/slider-img-4.jpg" id="slide8" alt="crepes">
+                        </div>
+                    </div>                   
 
-                <div id="dots">
-                    <a href="#slide1"></a>
-                    <a href="#slide3"></a>
-                    <a href="#slide5"></a>
-                    <a href="#slide7"></a>
+                        <div class="dots-nav">
+                            <label for="btn-slide1" class="nav-btn"></label>
+                            <label for="btn-slide3" class="nav-btn"></label>
+                            <label for="btn-slide5" class="nav-btn"></label>
+                            <label for="btn-slide7" class="nav-btn"></label>
+                        </div>  
                 </div>
             </div>
         </div>
