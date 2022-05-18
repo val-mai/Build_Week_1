@@ -383,7 +383,7 @@ div.moreinfo button:hover{
     text-align: center;
     background-size: cover;
     background-attachment: fixed;
-/*     position: relative; */
+    position: relative;
     justify-content: center;
     align-items: center;
 /*     box-shadow: inset 10px 10px 250px 10px #444040; */
