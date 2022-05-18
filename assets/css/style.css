@@ -253,6 +253,7 @@ nav div ul li {
 
 .slide {
     width: 50%;
+    transition: 2s;
 }
 
 .slide img {
