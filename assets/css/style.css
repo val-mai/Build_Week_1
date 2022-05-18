@@ -457,7 +457,7 @@ div.moreinfo button:hover{
 #blog .container h2 {
     color: white;
     padding-bottom: 3rem;
-/*     position: relative; */
+    position: relative;
 }
 
 
@@ -465,7 +465,7 @@ div.moreinfo button:hover{
     font-size: 1.3em;
     font-weight: bold;
     padding: 0 2.2em 1.2em;
-/*     position: relative; */
+    position: relative;
 }
 
 #blog h4::before {
