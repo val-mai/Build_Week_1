@@ -270,7 +270,6 @@ div.titolomenu {
     text-align: center;
     margin-bottom: 50px;
 }
-
 div.titolomenu h2 {
     position: relative;
     padding-bottom: 2em;
@@ -286,7 +285,6 @@ div.lista {
 div.lista h3{
     padding-bottom: 35px;
 }
-
 div.lista ul {
     list-style: none;
 }
@@ -294,12 +292,16 @@ div.lista ul {
 div.oggettolista {
     padding: 20px 0 20px 0;
 }
+div.oggettolista p {
+    margin-top: 12px;
+    padding-top: 0;
+    font-size: 0.9rem;
+}
 
 div.nomepiatto h4 {
     font-size: 1.5rem;
     color: #333333;
 }
-
 div.nomepiatto span {
     color: #938463;
     font-size: 0.9rem;
@@ -308,17 +310,10 @@ div.nomepiatto span {
     float: none;
 }
 
-div.oggettolista p {
-    margin-top: 12px;
-    padding-top: 0;
-    font-size: 0.9rem;
-}
-
 div.moreinfo {
     float: right;
     padding-top: 30px;
 }
-
 div.moreinfo button {
     font-family: mioFont;
     border: 1px solid #ff540c;
@@ -329,7 +324,6 @@ div.moreinfo button {
     font-weight: 700;
     transition: background-color 0.3s ease-out;
 }
-
 div.moreinfo button:hover{
     background-color: #ff540c;
     color: white;
@@ -344,6 +338,10 @@ div.moreinfo button:hover{
     div.titolomenu span{
         font-size: 2.9rem;
     }
+    div.titolomenu p{
+        padding-top: 30px;
+    }
+    
     div.nomepiatto{
         position: relative;
     }
@@ -357,9 +355,7 @@ div.moreinfo button:hover{
         z-index: 2;
         background: #fff;
     }
-    div.titolomenu p{
-        padding-top: 30px;
-    }
+
     div.tratteggio{
         position: absolute;
         top: 0;
