@@ -592,10 +592,6 @@ figure {
 }
 
 /* ====== Contact Css ====== */
-.contact{
-    padding: 100px;
-}
-
 .contact h2, .contact h3{
     position: relative;
     padding-bottom: 2em;
