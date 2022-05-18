@@ -119,17 +119,18 @@ header .container{
     position: sticky;
     display: flex;
     justify-content:space-between;
+    align-items: center;
     flex-wrap: wrap;
-    z-index: 99000;
-    top: -75px;
+    /* z-index: 99000; */
+    top: -70px;
     height: 5.2rem;
-    margin-left: 14px;
+    /* margin-left: 14px;
     padding-bottom: 0px;
     padding-top: 17px;
     padding-left: 11px;
     margin-right: 14px;
-    margin-bottom: 0px;
-    margin-top: -76px;
+    margin-bottom: 0px; */
+    margin-top: -83px;
 }
 header nav {
     position: relative;
@@ -153,12 +154,13 @@ header nav {
 #menuMobile {
     color: #ff540c;
     font-size: 1.2rem;
+    margin: 0;
 }
 input#menuButton {
     display: none;
 }
 input#menuButton:checked + nav {
-    height: 235px;
+    height: 250px;
     background-color: rgba(255, 255, 255, 0.69);
 } 
 
@@ -184,7 +186,7 @@ header nav div.burger ul li a {
 nav div.burger ul li a:hover {
     background-color: #e94c3d;
     width: 100%;
-    margin-bottom: 1px;
+/*     margin-bottom: 1px; */
 }
 
 /* .banner::before{
@@ -430,14 +432,14 @@ div.moreinfo button:hover{
     text-align: center;
     background-size: cover;
     background-attachment: fixed;
-    position: relative;
+    /* position: relative; */
     justify-content: center;
     align-items: center;
 /*     box-shadow: inset 10px 10px 250px 10px #444040; */
     padding-bottom: 4em;
 }
 
-#blog::before {
+/* #blog::before {
     content: "";
     position: absolute;
     left: 0;
@@ -448,7 +450,7 @@ div.moreinfo button:hover{
     height: 100%;
     background: url(../images/overlay-pattern.png) black;
     opacity: 0.3;
-}
+} */
 
 #blog .container h2 {
     color: white;
@@ -485,7 +487,7 @@ div.moreinfo button:hover{
     background-color: white;
     width: 100%;
     margin-top: 3rem;
-    position: relative;
+ /*    position: relative; */
 }
 
 #blog img {
@@ -514,7 +516,7 @@ figure {
 
 
 #buttonblog {
-    position: relative;
+/*     position: relative; */
     text-align: center;
     margin-top: 4em;
     height: 4.9rem;
@@ -538,7 +540,7 @@ figure {
     .singlecard {
         display: flex;
         margin: 0;
-        position: relative;
+       /*  position: relative; */
     }
 
     .rombo {
@@ -567,8 +569,6 @@ figure {
     #blog hr {
         display: none;
     }
-
-
 }
 
 @media screen and (min-width:992px) {
@@ -620,7 +620,6 @@ figure {
 
 
 #news {
-    padding: 100px 0px;
     text-align: center;
     background: url("../images/subscribe-bg.jpg");
     background-repeat: no-repeat;
@@ -647,11 +646,12 @@ figure {
     padding-bottom: 2em;
     font-weight: 500;
     letter-spacing: 1px;
-    font-size: 2em;
+    font-size: 30px;
 }
 
 #news span{
     text-transform: lowercase;
+    font-size: 25px;
 }
 
 #news p {
@@ -665,7 +665,7 @@ figure {
 #news input {
     width: 100%;
     background: var(--bianco);
-    opacity: 0.9;
+    opacity: 0.8;
     border: none;
     height: 60px;
     margin-bottom: 20px;
@@ -674,7 +674,7 @@ figure {
 
 
 #news button {
-    width: 30%;
+    width: 200px;
     height: 60px;
     border: none;
     background: var(--button);
@@ -682,18 +682,26 @@ figure {
     font-weight: bold;
     font-size: 16px;
     text-transform: uppercase;
-    float: left;
     position: relative;
+    letter-spacing: 1px;
+    display: block;
+    margin-top: 20px;
 }
 
 #news .container{
     padding: 100px 16px;
 }
 
-/* ====== Contact Css ====== */
+/* ====== Contact Us Css ====== */
+
+#contactUs {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
 #contactUs h2, #contactUs h3{
     position: relative;
-    padding-bottom: 2em;
+    padding-bottom: 30px;
 }
 
 #contactUs form input{
@@ -710,17 +718,19 @@ figure {
     width: 100%;
 }
 
-#contactUs a{
+#contactUs .buttonContact{
     background: var(--arancione);
-    float: right;
-    color: var(--bianco);
-    font-weight: 600;
-    text-transform: uppercase;
-    width: 500px;
+    width: 100%;
     height: 50px;
     padding-top: 15px;
     text-align: center;
+}
+
+#contactUs a{
     text-decoration: none;
+    color: var(--bianco);
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 
@@ -830,4 +840,48 @@ div h5 {
 .fa-facebook-f {
     padding-left: 0.8rem !important;
     padding-right: 0.8rem !important;
+}
+
+@media screen and (min-width:768px) {
+
+    #news h2 {
+        font-size: 45px;
+    }
+
+    #news span{
+        font-size: 35px;
+    }
+
+    #news input{
+        width: 500px;
+    }
+    #news button{
+        width: 200px;
+        float: right;
+        margin-top: 0;
+    }
+
+    form .groupNews {
+        display: inline-block;
+    }
+
+    #contactUs h2{
+          font-size: 35px;
+    }
+    #contactUs h2 span{
+          font-size: 45px;
+    }
+
+    #contactUs .buttonContact{
+        width: 500px;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media screen and (min-width:992px) {
+    #contactUs .buttonContact{
+        width: 500px;
+        float: right;
+    }
 }
