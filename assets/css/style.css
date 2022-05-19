@@ -386,7 +386,6 @@ div.titolomenu {
 div.titolomenu h2 {
     position: relative;
     padding-bottom: 2em;
-    font-size: 1.4rem;
 }
 
 div.lista {
@@ -809,10 +808,7 @@ padding: 20px 0;
 
 
 /* Footer */
- div div span {
-     color: #ff540c;
-     
- }
+
  footer div {
      line-height: 2rem;
  }
@@ -923,12 +919,12 @@ div h5 {
         font-size: 1rem;
     }
 
-    #news h2 {
-        font-size: 45px;
+    h2 {
+        font-size: 2.8rem;
     }
 
-    #news span{
-        font-size: 35px;
+    h2 span {
+        font-size: 2.2rem;
     }
 
     #news input{
