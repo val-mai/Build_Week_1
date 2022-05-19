@@ -839,6 +839,7 @@ padding: 20px 0;
  footer div.container div div span {
      margin-left:  2rem;
      font-size: 1.2rem;
+     color: var(--arancione);
  }
  div div i {
      color: #474747;
@@ -886,6 +887,7 @@ body > footer:nth-child(3) > div:nth-child(1) > h3:nth-child(3) {
 }
 div h5 {
     font-size: 1.4rem;
+    
 }
 .footer4 {
     display: inline-flex;
@@ -896,6 +898,9 @@ div h5 {
 }
 .footer4 li {
     margin-left: 1.5rem;
+}
+.footer4 li:hover {
+    color: var(--arancione);
 }
 .footerP p {
     text-align: center;
@@ -926,6 +931,9 @@ div h5 {
 .fa-facebook-f {
     padding-left: 0.9rem !important;
     padding-right: 0.9rem !important;
+}
+footer .container span {
+    color: var(--arancione);
 }
 
 @media screen and (min-width:768px) {
