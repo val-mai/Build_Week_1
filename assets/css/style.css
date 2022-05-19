@@ -977,14 +977,12 @@ footer .container span {
         display: flex;
         justify-content: space-evenly;
         margin-top: 18px;
-        padding-right: 370px;
         margin-left: -21px;
         margin-bottom: 36px;
     }
     .footer4 {
         display: flex;
         justify-content: space-evenly;
-        padding-right: 477px;
         margin-top: 0.7rem;
         margin-left: -1.4rem;
         margin-bottom: 5rem;
@@ -1046,7 +1044,7 @@ footer .container span {
         grid-column: 3;
         margin-top: -46px;
         margin-left: 0px;
-        margin-right: -171px;
+        margin-right: -49px;
     }
     body > footer:nth-child(4) > div:nth-child(1) > div:nth-child(1) {
         width: 18.5rem;
@@ -1057,7 +1055,7 @@ footer .container span {
         width: 21rem;
         grid-column: 2;
         margin-top: -35px;
-        margin-left: 75px;      
+        margin-left: 30px;      
     }
     .footer > h3:nth-child(1) {
         margin-bottom: 0.5rem;
