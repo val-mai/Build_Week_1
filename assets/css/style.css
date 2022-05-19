@@ -433,6 +433,7 @@ div.moreinfo button {
     height: 4.9rem;
     width: 17rem;
     text-transform: uppercase;
+    background-color: var(--bianco);
     font-weight: 700;
     transition: background-color 0.3s ease-out;
 }
@@ -557,12 +558,6 @@ div.moreinfo button:hover{
     transition: 1s ease-out;
 }
 
-hr {
-    border: none;
-    height: 1px;
-    background-color: var(--grigio);
-}
-
 figure {
     overflow: hidden;
 }
@@ -580,7 +575,6 @@ figure {
 #buttonblog {
     position: relative;
     z-index: 5;
-    text-align: center;
     margin-top: 4em;
     height: 4.9rem;
     width: 17rem;
@@ -590,6 +584,11 @@ figure {
     background-color: var(--arancione);
     transition: 300ms ease-out;
 }
+
+#blog .blogbtn {
+    text-align: start;
+}
+
 
 #buttonblog:hover {
     background-color: transparent;
@@ -630,8 +629,8 @@ figure {
         height: 100%;
     }
 
-    #blog hr {
-        display: none;
+    #blog .blogbtn {
+        text-align: center;
     }
 }
 
@@ -722,9 +721,7 @@ figure {
 #news p {
     margin-bottom: 1.8em;
     color: var(--bianco);
-    font-weight: 600;
     position: relative;
-    letter-spacing: 1px;
 }
 
 #news input {
@@ -779,6 +776,7 @@ padding: 20px 0;
     height: 50px;
     border: 1px solid var(--grigio);
     margin-bottom: 10px;
+    font-family: 'mioFont';
     width: 100%;
 }
 
@@ -787,6 +785,7 @@ padding: 20px 0;
     padding-left: 12px;
     height: 140px;
     border: 1px solid var(--grigio);
+    font-family: 'mioFont';
     margin-bottom: 10px;
     width: 100%;
 }
@@ -804,6 +803,10 @@ padding: 20px 0;
     color: var(--bianco);
     font-weight: 600;
     text-transform: uppercase;
+}
+
+#contactUs form {
+    padding-bottom: 20px;
 }
 
 
