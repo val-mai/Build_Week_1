@@ -78,6 +78,17 @@ p {
 }
 
 @media screen and (min-width:768px) {
+    body {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 2.8rem;
+    }
+
+    h2 span {
+        font-size: 2.2rem;
+    }
 
     .container {
         box-sizing: content-box;
@@ -149,7 +160,7 @@ input#menuButton:checked + nav {
 .banner {
     background-image: url(../images/header.jpg);
     background-size: cover;
-    height: 177px;
+    height: 280px;
     width: 100%;
     position: relative;
 }
@@ -172,7 +183,7 @@ nav div.burger ul li a:hover {
 
 .banner::before{
     content: "";
-    background: url(../images/overlay-pattern2.png);
+    background: url(../images/overlay-pattern.png) black;
     position: absolute;
     top: 0;
     left: 0;
@@ -918,16 +929,14 @@ div h5 {
 }
 
 @media screen and (min-width:768px) {
-    body {
-        font-size: 1rem;
-    }
 
-    h2 {
-        font-size: 2.8rem;
-    }
 
-    h2 span {
+    #blog .container h2, .aboutUs h2, #news h2{
         font-size: 2.2rem;
+    }   
+    
+    #blog .container h2 span, .aboutUs h2 span , #news h2 span{
+        font-size: 2.8rem;
     }
 
     #news input{
@@ -990,9 +999,6 @@ div h5 {
     div.footerP > p:nth-child(1) {
         font-size: 11.8px;
        }
-       
-       
-       
        
 }
 
