@@ -764,8 +764,8 @@ figure {
 }
 
 #news button:hover{
-    background-color: #3d7a73;
-    transition: background-color 1000ms linear;
+    background-color: #519e95;
+    transition: background-color 200ms linear;
 }
 
 #news .container{
