@@ -672,6 +672,7 @@ figure {
 
     #buttonblog {
         margin-top: 0;
+        width: 14.6rem;
     }
 
     #buttonblog:hover {
@@ -688,6 +689,10 @@ figure {
 
     .rombo {
         left: 47.3%;
+    }
+    #buttonblog {
+        margin-top: 0;
+        width: 17.8rem;
     }
 }
 
@@ -992,6 +997,7 @@ footer .container span {
         display: flex;
         margin-top: 18px;
         padding-right: 370px;
+        margin-left: 0px;
     }
     .footer4 {
         display: flex;
@@ -1092,3 +1098,19 @@ footer .container span {
 
        
 }
+@media screen and (min-width:1200px) {
+    .footer3 {
+        flex-wrap: nowrap;
+    }
+    body > footer:nth-child(4) > div:nth-child(1) > div:nth-child(4) {
+        margin-top: -103px;
+    }
+    .banner {
+        background-image: url(../images/header.jpg);
+        background-size: cover;
+        height: 696px;
+        width: 100%;
+        position: relative;
+    }
+       
+    }
