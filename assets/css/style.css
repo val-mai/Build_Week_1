@@ -914,12 +914,12 @@ div h5 {
 
 @media screen and (min-width:768px) {
 
-    #news h2 {
-        font-size: 45px;
+    h2 {
+        font-size: 2.8rem;
     }
 
-    #news span{
-        font-size: 35px;
+    h2 span {
+        font-size: 2.2rem;
     }
 
     #news input{
