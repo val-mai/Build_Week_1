@@ -222,15 +222,16 @@ nav div ul {
 .slides {
     display: flex;
     width: 100%;
+    overflow: hidden;
 }
 
 .slide {
-    width: 50%;
-    transition: 2s;
+    width: 100%;
+    transition: 1s;
 }
 
 .slide img {
-    height: 11.2rem;
+    height: 17.3rem;
     border-radius: 5px;
 }
 
@@ -260,16 +261,102 @@ nav div ul {
     margin-left: 0;
 }
 
-#btn-slide3:checked~.first {
+#btn-slide2:checked~.first {
     margin-left: -100%;
 }
 
-#btn-slide5:checked~.first {
+#btn-slide3:checked~.first {
     margin-left: -200%;
 }
 
-#btn-slide7:checked~.first {
+#btn-slide4:checked~.first {
     margin-left: -300%;
+}
+
+#btn-slide5:checked~.first {
+    margin-left: -400%;
+}
+
+#btn-slide6:checked~.first {
+    margin-left: -500%;
+}
+
+#btn-slide7:checked~.first {
+    margin-left: -600%;
+}
+
+#btn-slide8:checked~.first {
+    margin-left: -700%;
+}
+
+@media screen and (min-width:480px) {
+
+    .slide {
+        width: 50%;
+        transition: 2s;
+    }
+
+    .slide img {
+        height: 11.2rem;
+    }
+
+    #btn-slide2, #btn-slide4, #btn-slide6, #btn-slide8 {
+        display: none;
+    }
+
+    #btn-slide1:checked~.first {
+        margin-left: 0;
+    }
+    
+    #btn-slide3:checked~.first {
+        margin-left: -100%;
+    }
+    
+    #btn-slide5:checked~.first {
+        margin-left: -200%;
+    }
+    
+    #btn-slide7:checked~.first {
+        margin-left: -300%;
+}
+}
+
+@media screen and (min-width:768px) {
+    .slide img {
+        margin: 0.5rem;
+        height: 16.95rem;
+    }  
+}
+
+@media screen and (min-width:992px) {
+    #btn-slide3, #btn-slide7 {
+        display: none;
+    }
+
+    .slide img {
+        margin: 1rem;
+        height: 10rem;
+    }
+
+    .slider {
+        padding: 0 2rem;
+    }
+
+    #btn-slide1:checked~.first {
+        margin-left: 0;
+    }
+    
+    #btn-slide5:checked~.first {
+        margin-left: -100%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .slide img {
+        margin: 1rem;
+        height: 13rem;
+    }
+    
 }
 
 /* About us */
@@ -681,6 +768,11 @@ figure {
 #contactUs h2, #contactUs h3{
     position: relative;
     padding-bottom: 30px;
+}
+
+
+#contactUs h3{
+padding: 20px 0;
 }
 
 #contactUs form input{
