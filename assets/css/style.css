@@ -126,62 +126,74 @@ header {
     margin-right: 9px;
     color: var(--arancione);
    }
+
    
-header .navbar{
-    background-color: rgba(255, 255, 255, 0.69);
-    position: sticky;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    top: -70px;
-    height: 5.2rem;
-    box-sizing: border-box;
-    margin-top: -83px;
-    padding: 0 1rem;
-}
-header nav {
-    position: relative;
-    height: 0px;
-    overflow: hidden;
-    width: 100%;
-    transition: height 0.5s ease-out;
-}
+   header .navbar{
+       background-color: rgba(255, 255, 255, 0.69);
+       position: sticky;
+       display: flex;
+       justify-content:space-between;
+       align-items: center;
+       flex-wrap: wrap;
+       top: -70px;
+       padding-top: 1em;
+       padding-bottom: 2rem;
+       margin-top: -75px;
+    }
+    
+    @media screen and (max-width:768px) {
 
-input#menuButton {
-    display: none;
-}
+        #logo {
+            padding-left: 1em;
+        }
 
-input#menuButton:checked + nav {
-    height: 210px;
-    background-color: rgba(255, 255, 255, 0.69);
-} 
-
-.banner {
-    background-image: url(../images/header.jpg);
-    background-size: cover;
-    height: 280px;
-    width: 100%;
-    position: relative;
-}
-
-header nav div.burger ul li a {
-    color: #2E2E2E;
-    transition: .3s cubic-bezier(1.1);
-    border-bottom: 2px solid transparent;
-    text-decoration: none;
-    display: inline-block;
-    width: 96%;
-    margin-bottom: 15px;
-    padding-top: 0px;
-}
-
-nav div.burger ul li a:hover {
-    border-bottom: 2px solid var(--arancione);
-    width: 90%;
-}
-
-.banner::before{
+        header nav {
+            position: relative;
+            top: 55px;
+            height: 0px;
+            overflow: hidden;
+            width: 100%;
+            transition: height 0.5s ease-out;
+        }
+    }
+    
+    input#menuButton {
+        display: none;
+    }
+    
+    input#menuButton:checked + nav {
+        height: 210px;
+        background-color: rgba(255, 255, 255, 0.69);
+    } 
+    
+    .banner {
+        background-image: url(../images/header.jpg);
+        background-size: cover;
+        height: 280px;
+        width: 100%;
+        position: relative;
+    }
+    
+    header nav ul li a {
+        color: #2E2E2E;
+        transition: .3s cubic-bezier(1.1);
+        border-width: 0%;
+        padding-bottom: 0.5em;
+        border-bottom: 2px solid trasparent;
+        text-decoration: none;
+        display: inline-block;
+        width: 25%;
+        margin-bottom: 0.8rem;
+        margin-left: 1rem;
+    }
+    
+    nav ul li a:hover {
+        border-bottom: 2px solid var(--arancione);
+        width: 90%;
+        transition: all 200ms;
+    }
+    
+    .banner::before {
     content: "";
     background: url(../images/overlay-pattern.png) black;
     position: absolute;
@@ -192,14 +204,48 @@ nav div.burger ul li a:hover {
     opacity: 0.3;
 }
 
-nav div ul {
+nav ul {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: flex-start;
     list-style: none;
-    padding-left: 1rem;
-    margin-top: 10px;
+}
 
+nav ul li {
+    white-space: nowrap;
+}
+
+@media screen and (min-width:768px) {
+    
+    #menuMobile {
+        display: none;
+    }
+    
+    #logo {
+        padding-bottom: 0.5em;
+    }
+    
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+
+    nav {
+        width: 70%;
+    }
+
+    header nav ul li a {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar {
+        padding: 0 1em;
+    } 
 }
 
 /* Main */
