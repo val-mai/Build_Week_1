@@ -487,7 +487,6 @@ div.moreinfo button {
     font-family: mioFont;
     border: 1px solid #ff540c;
     color: #ff540c;
-    background-color: white;
     height: 4.9rem;
     width: 17rem;
     text-transform: uppercase;
@@ -719,6 +718,7 @@ figure {
 
     #buttonblog {
         margin-top: 0;
+        width: 14.6rem;
     }
 
     #buttonblog:hover {
@@ -735,6 +735,10 @@ figure {
 
     .rombo {
         left: 47.3%;
+    }
+    #buttonblog {
+        margin-top: 0;
+        width: 17.8rem;
     }
 }
 
@@ -810,8 +814,8 @@ figure {
 }
 
 #news button:hover{
-    background-color: #3d7a73;
-    transition: background-color 1000ms linear;
+    background-color: #519e95;
+    transition: background-color 200ms linear;
 }
 
 #news .container{
@@ -865,12 +869,14 @@ padding: 20px 0;
     padding-bottom: 20px;
 }
 
-#contactUs a:hover {
-    background-color: #AD310B;
-    -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear;
+#contactUs .buttonContact{
+    background: var(--arancione);
+    width: 100%;
+    height: 50px;
+    padding-top: 15px;
+    text-align: center;
 }
+
 
 
 /* Footer */
@@ -951,9 +957,15 @@ div h5 {
 .footer4 li {
     margin-left: 1.5rem;
 }
-.footer4 li:hover {
+/* .footer4 li:hover {
     color: var(--arancione);
+} */
+
+.footer4 li i:hover {
+    background-color: var(--arancione);
+    transition: background-color 200ms linear;
 }
+
 .footerP p {
     text-align: center;
     background-color: #e9e9e9;
@@ -980,6 +992,8 @@ div h5 {
     margin-bottom: 3rem;
     font-size: 1rem;
 }
+
+
 .fa-facebook-f {
     padding-left: 0.9rem !important;
     padding-right: 0.9rem !important;
@@ -1029,6 +1043,7 @@ footer .container span {
         display: flex;
         margin-top: 18px;
         padding-right: 370px;
+        margin-left: 0px;
     }
     .footer4 {
         display: flex;
@@ -1129,3 +1144,19 @@ footer .container span {
 
        
 }
+@media screen and (min-width:1200px) {
+    .footer3 {
+        flex-wrap: nowrap;
+    }
+    body > footer:nth-child(4) > div:nth-child(1) > div:nth-child(4) {
+        margin-top: -103px;
+    }
+    .banner {
+        background-image: url(../images/header.jpg);
+        background-size: cover;
+        height: 696px;
+        width: 100%;
+        position: relative;
+    }
+       
+    }
