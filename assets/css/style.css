@@ -1133,6 +1133,7 @@ footer .container span {
     body > footer:nth-child(4) > div:nth-child(1) > div:nth-child(4) {
         width: 15rem;
         grid-column: 3;
+        margin-top: 2em;
     }
     body > footer:nth-child(4) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) {
         margin-top: -18px;
@@ -1149,7 +1150,7 @@ footer .container span {
         flex-wrap: nowrap;
     }
     body > footer:nth-child(4) > div:nth-child(1) > div:nth-child(4) {
-        margin-top: -103px;
+        margin-top: 0;
     }
     .banner {
         background-image: url(../images/header.jpg);
