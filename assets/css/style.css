@@ -222,6 +222,7 @@ nav div ul {
 .slides {
     display: flex;
     width: 100%;
+    overflow: hidden;
 }
 
 .slide {
@@ -337,9 +338,9 @@ nav div ul {
         height: 10rem;
     }
 
-    /* .slider {
-        margin: 0 2rem;
-    } */
+    .slider {
+        padding: 0 2rem;
+    }
 
     #btn-slide1:checked~.first {
         margin-left: 0;
