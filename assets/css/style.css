@@ -819,13 +819,6 @@ padding: 20px 0;
     padding-bottom: 20px;
 }
 
-#contactUs a:hover {
-    background-color: #AD310B;
-    -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear;
-}
-
 
 /* Footer */
 
@@ -905,9 +898,15 @@ div h5 {
 .footer4 li {
     margin-left: 1.5rem;
 }
-.footer4 li:hover {
+/* .footer4 li:hover {
     color: var(--arancione);
+} */
+
+.footer4 li i:hover {
+    background-color: var(--arancione);
+    transition: background-color 200ms linear;
 }
+
 .footerP p {
     text-align: center;
     background-color: #e9e9e9;
@@ -934,6 +933,8 @@ div h5 {
     margin-bottom: 3rem;
     font-size: 1rem;
 }
+
+
 .fa-facebook-f {
     padding-left: 0.9rem !important;
     padding-right: 0.9rem !important;
