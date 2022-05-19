@@ -344,6 +344,7 @@ div.moreinfo button {
     font-family: mioFont;
     border: 1px solid #ff540c;
     color: #ff540c;
+    background-color: white;
     height: 4.9rem;
     width: 17rem;
     text-transform: uppercase;
