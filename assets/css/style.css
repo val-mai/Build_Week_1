@@ -769,6 +769,11 @@ figure {
     padding-bottom: 30px;
 }
 
+
+#contactUs h3{
+padding: 20px 0;
+}
+
 #contactUs form input{
     height: 50px;
     border: 1px solid var(--grigio);
