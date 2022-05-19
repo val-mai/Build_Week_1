@@ -52,47 +52,55 @@
             <div class="container">
                 <div>
                     <h3>Featured <span>works</span></h3>
-                    <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+                    <button id="next" onclick="nextSlide()"><i class="fa-solid fa-angle-right"></i></button>
                 </div>
 
                 <div class="slider">
                     <div class="slides">
                         <input type="radio" name="radio-btn" id="btn-slide1" />
+                        <input type="radio" name="radio-btn" id="btn-slide2" />
                         <input type="radio" name="radio-btn" id="btn-slide3" />
+                        <input type="radio" name="radio-btn" id="btn-slide4" />
                         <input type="radio" name="radio-btn" id="btn-slide5" />
+                        <input type="radio" name="radio-btn" id="btn-slide6" />
                         <input type="radio" name="radio-btn" id="btn-slide7" />
+                        <input type="radio" name="radio-btn" id="btn-slide8" />
                         
                         <div class="first slide">
-                            <img src="assets/images/slider/slider-img-1.jpg" id="slide1" alt="brownies">
+                            <img src="" id="slide1">
                         </div>
                         <div class="slide">
-                            <img src="assets/images/slider/slider-img-2.jpg" id="slide2" alt="ravioli">
+                            <img src="" id="slide2">
                         </div>
                         <div class="slide">
-                            <img src="assets/images/slider/slider-img-3.jpg" id="slide3" alt="arrosto">
+                            <img src="" id="slide3">
                         </div>
                         <div class="slide">
-                            <img src="assets/images/slider/slider-img-4.jpg" id="slide4" alt="crepes">
+                            <img src="" id="slide4">
                         </div>
                         <div class="slide">
-                            <img src="assets/images/slider/slider-img-1.jpg" id="slide5" alt="brownies">
+                            <img src="" id="slide5">
                         </div>
                         <div class="slide">
-                            <img src="assets/images/slider/slider-img-2.jpg" id="slide6" alt="ravioli">
+                            <img src="" id="slide6">
                         </div>
                         <div class="slide">
-                            <img src="assets/images/slider/slider-img-3.jpg" id="slide7" alt="arrosto">
+                            <img src="" id="slide7">
                         </div>
                         <div class="slide">
-                            <img src="assets/images/slider/slider-img-4.jpg" id="slide8" alt="crepes">
+                            <img src="" id="slide8">
                         </div>
                     </div>                   
 
                         <div class="dots-nav">
-                            <label for="btn-slide1" class="nav-btn"></label>
-                            <label for="btn-slide3" class="nav-btn"></label>
-                            <label for="btn-slide5" class="nav-btn"></label>
-                            <label for="btn-slide7" class="nav-btn"></label>
+                            <label for="btn-slide1" class="nav-btn" id="btn-slide1"></label>
+                            <label for="btn-slide2" class="nav-btn" id="btn-slide2"></label>
+                            <label for="btn-slide3" class="nav-btn" id="btn-slide3"></label>
+                            <label for="btn-slide4" class="nav-btn" id="btn-slide4"></label>
+                            <label for="btn-slide5" class="nav-btn" id="btn-slide5"></label>
+                            <label for="btn-slide6" class="nav-btn" id="btn-slide6"></label>
+                            <label for="btn-slide7" class="nav-btn" id="btn-slide7"></label>
+                            <label for="btn-slide8" class="nav-btn" id="btn-slide8"></label>
                         </div>  
                 </div>
             </div>
@@ -140,7 +148,6 @@
                             <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
                         </div>
                     </div>
-                    <hr>
                     <div class="singlecard">
                         <div class="didascalie">
                             <div class="rombo"></div>
@@ -327,14 +334,18 @@
         <div class="container">
             <div>
                 <h3>contact <span>INFO</span></h3>
-                <div><i class="fa-solid fa-phone"></i><span>Telefone</span>
+                <div>
+                     <div><i class="fa-solid fa-phone"></i><span>Telefone</span>
                     <p class="footerP">(000) 123 456 78- (000) 123 4567 89</p>
-                </div>
-                <div><i class="fa-solid fa-location-dot"></i><span>Address</span>
+                    </div>
+                
+                    <div><i class="fa-solid fa-location-dot"></i><span>Address</span>
                     <address>2046 Blue Spruce Lane Laurel Canada</address>
-                </div>
-                <div><i class="fa-solid fa-envelope"></i><span>E mail</span>
+                    </div>
+
+                    <div><i class="fa-solid fa-envelope"></i><span>E mail</span>
                     <p class="footerP">rest@gmail.com - rest@mail.ru</p>
+                    </div>
                 </div>
             </div>
             <div class="footer2">
@@ -346,13 +357,15 @@
                 <p class="footerP">Lorem ipsum dolor sit amet, consectetur adip iscing elit. Curabitur ut blandit sapien
                 </p>
             </div>
-            <h3>photo <span>STREAM</span></h3>
-            <div class="footer3">
-                <div><img src="assets/images/photo/photo-1.jpg" alt="foto1"></div>
-                <div><img src="assets/images/photo/photo-2.jpg" alt="foto2"></div>
-                <div><img src="assets/images/photo/photo-3.jpg" alt="foto3"></div>
-                <div><img src="assets/images/photo/photo-4.jpg" alt="foto4"></div>
-            </div>
+            <div class="footer 3.1">
+                <h3>photo <span>STREAM</span></h3>
+                <div class="footer3">
+                    <div><img src="assets/images/photo/photo-1.jpg" alt="foto1"></div>
+                    <div><img src="assets/images/photo/photo-2.jpg" alt="foto2"></div>
+                    <div><img src="assets/images/photo/photo-3.jpg" alt="foto3"></div>
+                    <div><img src="assets/images/photo/photo-4.jpg" alt="foto4"></div>
+                </div>
+             </div>
             <div>
                 <h5>Follow <span>US</span></h5>
                 <ul class="footer4">
@@ -377,6 +390,7 @@
 
     </footer>
     <!-- ====== Fine Footer ====== -->
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
