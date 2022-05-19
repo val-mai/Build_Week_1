@@ -1072,7 +1072,13 @@ footer .container span {
     div.footerP {
         margin-top: 52px;
     }
-       
+    
+    .banner{
+        height: 360px;
+    }
 
+    .aboutUs {
+        padding: 6.25rem 0;
+    }
        
 }
