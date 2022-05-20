@@ -623,7 +623,7 @@ figure {
     z-index: 5;
     margin-top: 4em;
     height: 4.9rem;
-    width: 17rem;
+    width: 15.6rem;
     font-weight: bold;
     border: solid 1px var(--arancione);
     color: white;
@@ -717,9 +717,6 @@ figure {
 
 @media screen and (min-width:1200px) {
 
-    #blog .container {
-        width: 1140px;
-    }
 
     .rombo {
         left: 47.3%;
@@ -761,12 +758,12 @@ figure {
     padding-bottom: 2em;
     font-weight: 500;
     letter-spacing: 1px;
-    font-size: 30px;
+    font-size: 1.875rem;
 }
 
 #news span{
     text-transform: lowercase;
-    font-size: 25px;
+    font-size: 1.56rem;
 }
 
 #news p {
@@ -780,25 +777,24 @@ figure {
     background: var(--bianco);
     opacity: 0.8;
     border: none;
-    height: 60px;
-    margin-bottom: 20px;
+    height: 3.6rem;
+    margin-bottom: 1.2rem;
     position: relative;
 }
 
 
 #news button {
-    width: 200px;
-    height: 60px;
+    width: 12.5rem;
+    height: 3.6rem;
     border: none;
     background: var(--button);
     color: var(--bianco);
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1rem;
     text-transform: uppercase;
     position: relative;
     letter-spacing: 1px;
     display: block;
-    margin-top: 20px;
 }
 
 #news button:hover{
@@ -813,36 +809,36 @@ figure {
 /* ====== Contact Us Css ====== */
 
 #contactUs {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 6.25rem;
+    margin-bottom: 6.25rem;
 }
 
 #contactUs h2, #contactUs h3{
     position: relative;
-    padding-bottom: 30px;
+    padding-bottom: 1.87rem;
 }
 
 
 #contactUs h3{
-padding: 20px 0;
+padding: 1.25rem 0;
 }
 
 #contactUs form input{
-    padding-left: 12px;
-    height: 50px;
+    padding-left: 0.75rem;
+    height: 3.125rem;
     border: 1px solid var(--grigio);
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     font-family: 'mioFont';
     width: 100%;
 }
 
 #contactUs form textarea{
-    padding-top: 10px;
-    padding-left: 12px;
-    height: 140px;
+    padding-top: 0.625rem;
+    padding-left: 0.75rem;
+    height: 8.75rem;
     border: 1px solid var(--grigio);
     font-family: 'mioFont';
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     width: 100%;
 }
 
@@ -854,14 +850,14 @@ padding: 20px 0;
 }
 
 #contactUs form {
-    padding-bottom: 20px;
+    padding-bottom: 1.25rem;
 }
 
 #contactUs .buttonContact{
     background: var(--arancione);
     width: 100%;
-    height: 50px;
-    padding-top: 15px;
+    height: 3.125rem;
+    padding-top: 0.938rem;
     text-align: center;
 }
 
@@ -989,6 +985,7 @@ div h5 {
 }
 footer .container span {
     color: var(--arancione);
+    font-weight: bold;
 }
 
 @media screen and (min-width:768px) {
