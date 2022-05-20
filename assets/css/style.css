@@ -75,7 +75,7 @@ p {
 
 .container {
     margin: 0 auto;
-    width: 90%;
+    width: 93%;
 }
 
 @media screen and (min-width:768px) {
@@ -91,7 +91,7 @@ p {
         font-size: 2.2rem;
     }
 
-    .container {
+   .container {
         margin: 0 auto;
     }
 }
@@ -110,74 +110,92 @@ header {
     margin-right: 9px;
     color: var(--arancione);
    }
-
    
-   header .navbar{
-       background-color: rgba(255, 255, 255, 0.90);
-       position: sticky;
-       display: flex;
-       justify-content:space-between;
-       align-items: center;
-       flex-wrap: wrap;
-       top: -70px;
-       padding-top: 1em;
-       padding-bottom: 2rem;
-       margin-top: -75px;
-    }
+header .navbar{
+    background-color: rgba(255, 255, 255, 0.90);
+    position: sticky;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    top: -70px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: -75px;
+}
     
-    @media screen and (max-width:768px) {
+ @media screen and (max-width:767px) {
 
-        #logo {
-            padding-left: 1em;
-        }
+    #logo {
 
-        header nav {
-            position: relative;
-            top: 55px;
-            height: 0px;
-            overflow: hidden;
-            width: 100%;
-            transition: height 0.5s ease-out;
-        }
+        padding-left: 1em;
     }
-    
-    input#menuButton {
-        display: none;
-    }
-    
-    input#menuButton:checked + nav {
-        height: 210px;
-        background-color: rgba(255, 255, 255, 0.69);
-    } 
-    
-    .banner {
-        background-image: url(../images/header.jpg);
-        background-size: cover;
-        height: 8rem;
-        width: 100%;
+
+    header nav {
         position: relative;
+        top: 55px;
+        height: 0px;
+        overflow: hidden;
+        width: 100%;
+        transition: height 0.5s ease-out;
     }
+}
     
-    header nav ul li a {
-        color: #2E2E2E;
-        transition: .3s cubic-bezier(1.1);
-        border-width: 0%;
-        padding-bottom: 0.5em;
-        border-bottom: 2px solid trasparent;
-        text-decoration: none;
-        display: inline-block;
-        width: 25%;
-        margin-bottom: 0.8rem;
-        margin-left: 1rem;
-    }
+input#menuButton {
+    display: none;
+}
     
-    nav ul li a:hover {
-        border-bottom: 2px solid var(--arancione);
-        width: 90%;
-        transition: all 200ms;
-    }
+input#menuButton:checked + nav {
+    height: 210px;
+    background-color: rgba(255, 255, 255, 0.69);
+} 
     
-    .banner::before {
+.banner {
+    background-image: url(../images/header.jpg);
+    background-size: cover;
+    height: 8rem;
+    width: 100%;
+    position: relative;
+}
+
+@media screen and (min-width:480px) {
+    .banner {
+        height: 11rem;
+    }    
+}
+
+@media screen and (min-width:768px) {
+    .banner {
+        height: 16.9rem;
+    }    
+}
+
+@media screen and (min-width:1200px) {
+    .banner {
+        height: 27rem;
+    }    
+}
+    
+header nav ul li a {
+    color: #2E2E2E;
+    transition: .3s cubic-bezier(1.1);
+    border-width: 0%;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid trasparent;
+    text-decoration: none;
+    display: inline-block;
+    width: 25%;
+    margin-bottom: 0.8rem;
+    margin-left: 1rem;
+}
+    
+nav ul li a:hover {
+    border-bottom: 2px solid var(--arancione);
+    width: 90%;
+    transition: all 200ms;
+}
+    
+.banner::before {
     content: "";
     background: url(../images/overlay-pattern.png) black;
     position: absolute;
@@ -217,7 +235,6 @@ nav ul li {
         align-items: center;
     }
     
-
     nav {
         width: 70%;
     }
@@ -232,9 +249,9 @@ nav ul li {
     } 
 }
 
-/* Main */
+/* ===================== Main ============================*/
 
-/* Slider */
+/* Home */
 .home {
     padding: 2rem 0;
 }
@@ -334,13 +351,53 @@ nav ul li {
     margin-left: -700%;
 }
 
+@media screen and (min-width:480px) {
+
+    .slide {
+        width: 50%;
+        transition: 2s;
+    }
+
+    .slide img {
+        height: 11.2rem;
+    }
+
+    #btn-slide2, #btn-slide4, #btn-slide6, #btn-slide8 {
+        display: none;
+    }
+
+    #btn-slide1:checked~.first {
+        margin-left: 0;
+    }
+    
+    #btn-slide3:checked~.first {
+        margin-left: -100%;
+    }
+    
+    #btn-slide5:checked~.first {
+        margin-left: -200%;
+    }
+    
+    #btn-slide7:checked~.first {
+        margin-left: -300%;
+}
+}
 
 
 @media screen and (min-width:768px) {
+    .home {
+        padding: 2.5rem;    
+    }
+
+    .home .container div h3 {
+        margin-left: 0.9rem;
+    }
+    
     .slide img {
-        margin: 0.5rem;
-        height: 16.95rem;
-    }  
+        margin: 0.8rem;
+        height: 15.2rem;
+    }
+    
 }
 
 @media screen and (min-width:992px) {
@@ -349,8 +406,8 @@ nav ul li {
     }
 
     .slide img {
-        margin: 1rem;
-        height: 10rem;
+        margin: 1.1rem;
+        height: 8.96rem;
     }
 
     .slider {
@@ -367,11 +424,14 @@ nav ul li {
 }
 
 @media screen and (min-width:1200px) {
+    .slide {
+        width: 90%;
+    }
+
     .slide img {
         margin: 1rem;
-        height: 13rem;
+        height: 11.5rem;
     }
-    
 }
 
 /* About us */
@@ -511,7 +571,7 @@ div.moreinfo button:hover{
     justify-content: center;
     align-items: center;
     z-index: 5;
-    padding-bottom: 4em;
+    padding-bottom: 4.8rem;
 }
 
 #blog::before {
@@ -582,7 +642,7 @@ figure {
 }
 
 .didascalie {
-    padding: 1em 2em;
+    padding: 2.8rem 1.1rem;
     background-color: white;
 }
 
@@ -591,7 +651,7 @@ figure {
     font-family: mioFont;
     position: relative;
     z-index: 5;
-    margin-top: 4em;
+    margin-top: 3.5rem;
     height: 4.9rem;
     width: 15.6rem;
     font-weight: bold;
@@ -625,7 +685,7 @@ figure {
     .rombo {
         position: absolute;
         left: 48%;
-        top: 20%;
+        top: 28%;
         width: 30px;
         height: 30px;
         background: #fff;
@@ -647,6 +707,7 @@ figure {
 
     #blog .blogbtn {
         text-align: center;
+        padding-bottom: 2rem;
     }
 }
 
@@ -686,8 +747,6 @@ figure {
 }
 
 @media screen and (min-width:1200px) {
-
-
     .rombo {
         left: 47.3%;
     }
@@ -697,10 +756,7 @@ figure {
     }
 }
 
-/* ====== News CSS ====== */
-
-
-
+/* ====== News ====== */
 #news {
     text-align: center;
     background: url("../images/subscribe-bg.jpg");
@@ -708,6 +764,8 @@ figure {
     background-attachment: fixed;
     background-size: cover;
     position: relative;
+    padding-top: 2.8rem;
+    padding-bottom: 1.4rem;
 }
 #news::before {
     content: "";
@@ -725,7 +783,7 @@ figure {
 #news h2 {
     color: var(--bianco);
     position: relative;
-    padding-bottom: 2em;
+    padding-bottom: 2.5rem;
     font-weight: 500;
     letter-spacing: 1px;
     font-size: 1.875rem;
@@ -737,7 +795,8 @@ figure {
 }
 
 #news p {
-    margin-bottom: 1.8em;
+    padding: 1.56rem 0;
+    line-height: 1.2;
     color: var(--bianco);
     position: relative;
 }
@@ -745,22 +804,23 @@ figure {
 #news input {
     width: 100%;
     background: var(--bianco);
-    opacity: 0.8;
+    opacity: 0.9;
     border: none;
-    height: 3.6rem;
+    height: 3.9rem;
     margin-bottom: 1.2rem;
     position: relative;
+    padding: 0 0.5rem;
 }
 
 
 #news button {
     width: 12.5rem;
-    height: 3.6rem;
+    height: 3.7rem;
     border: none;
     background: var(--button);
     color: var(--bianco);
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
     position: relative;
     letter-spacing: 1px;
@@ -838,56 +898,71 @@ padding: 1.25rem 0;
  footer div {
      line-height: 2rem;
  }
+
  footer div.container div div p {
      padding-top: 0;
      font-size: 0.9rem;
  }
+
  footer div.container div div {
      margin-top: 1rem;
  }
+
  .footerP {
     color:#474747;
  }
+
  footer div.container div div span {
-     margin-left:  2rem;
+     margin-left: 2rem;
      font-size: 1.2rem;
      color: var(--arancione);
+     font-weight: 500;
  }
+
  div div i {
      color: #474747;
      font-size: 1.2rem;
      list-style: none;
  }
- footer div.container div ul {
+
+footer div.container div ul {
     list-style: none;
- }
+}
+
 footer div.container div div address {
      color: #474747;
- }
- footer div.container div h3 {
+}
+
+footer div.container div h3 {
      margin-bottom: 2.5rem;
      font-size: 1.2rem;
- }
- div.footer2 h3 {
+}
+
+div.footer2 h3 {
     margin-top: 4.1rem;
     font-size: 1.2rem;
 }
+
 div.footer2 p {
     margin-top: -2.6rem;
     font-size: 0.9rem;
     margin-bottom: 1.5rem;
 }
+
 div.footer2 span {
     font-size: 1.2rem;
     font-weight: bold;
 }
+
 div.footer h3 {
     margin-top: 3rem;
 }
+
 body > footer:nth-child(3) > div:nth-child(1) > h3:nth-child(3) {
     margin-top: 3.88rem;
     font-size: 1.2rem;
-   }
+}
+
 .footer3 {
     display: inline-flex;
     flex-wrap: wrap;
@@ -895,13 +970,15 @@ body > footer:nth-child(3) > div:nth-child(1) > h3:nth-child(3) {
     /* margin-left: -21px; */
     margin-bottom: 2rem;
 }
+
 .footer3 div {
     margin-right: 1.5rem;
 }
+
 div h5 {
     font-size: 1.4rem;
-    
 }
+
 .footer4 {
     display: inline-flex;
     justify-content: space-evenly;
@@ -909,12 +986,10 @@ div h5 {
     margin-bottom: 5rem;
     margin-left: -23px;
 }
+
 .footer4 li {
     margin-left: 1.5rem;
 }
-/* .footer4 li:hover {
-    color: var(--arancione);
-} */
 
 .footer4 li i:hover {
     background-color: var(--arancione);
@@ -948,50 +1023,25 @@ div h5 {
     font-size: 1rem;
 }
 
-
 .fa-facebook-f {
     padding-left: 0.9rem !important;
     padding-right: 0.9rem !important;
 }
+
 footer .container span {
     color: var(--arancione);
     font-weight: bold;
 }
 
-@media screen and (min-width:480px) {
-
-    .slide {
-        width: 50%;
-        transition: 2s;
-    }
-
-    .slide img {
-        height: 11.2rem;
-    }
-
-    #btn-slide2, #btn-slide4, #btn-slide6, #btn-slide8 {
-        display: none;
-    }
-
-    #btn-slide1:checked~.first {
-        margin-left: 0;
-    }
-    
-    #btn-slide3:checked~.first {
-        margin-left: -100%;
-    }
-    
-    #btn-slide5:checked~.first {
-        margin-left: -200%;
-    }
-    
-    #btn-slide7:checked~.first {
-        margin-left: -300%;
-}
-}
-
 @media screen and (min-width:768px) {
+    
+    .aboutUs .container {
+        padding: 3rem 0;
+    }
 
+    .aboutUs h2, .aboutUs p{
+        padding: 2.3rem 0;
+    }
 
     #blog .container h2, .aboutUs h2, #news h2{
         font-size: 2.2rem;
@@ -1001,7 +1051,7 @@ footer .container span {
         font-size: 2.8rem;
     }
 
-    #news input{
+    #news input{ 
         width: 500px;
     }
     #news button{
@@ -1017,6 +1067,7 @@ footer .container span {
     #contactUs h2{
           font-size: 35px;
     }
+
     #contactUs h2 span{
           font-size: 45px;
     }
@@ -1061,7 +1112,6 @@ footer .container span {
        }
        
 }
-
 
 @media screen and (min-width:992px) {
     #contactUs .buttonContact{
@@ -1128,50 +1178,56 @@ footer .container span {
     }
     div.footerP {
         margin-top: 52px;
-    }
-       
-
-       
+    }       
 }
+
 @media screen and (min-width:1200px) {
     .footer3 {
         flex-wrap: nowrap;
     }
+
     body > footer:nth-child(4) > div:nth-child(1) > div:nth-child(4) {
         margin-top: 0;
     }
+
     .banner {
         background-image: url(../images/header.jpg);
         background-size: cover;
-        height: 688px;
         width: 100%;
         position: relative;
     }
+
     nav ul {
         margin-left: 288px;
         margin-right: 53px;
         font-size: 15px;
         padding-top: 22px;
     }
+
     #logo {
         padding-bottom: 0.5em;
         padding-top: 24px;
         padding-left: 24px;
     }
+
     .home > div:nth-child(1) > div:nth-child(1) > h3:nth-child(1) {
         margin-left: 38px;
         font-size: 1.2rem;
     }
+
     #buttonblog {
         font-size: 1rem;
     }
+
     .moreinfo > a:nth-child(1) > button:nth-child(1) {
         font-size: 1rem;
     }
+
     .groupNews {
         display: inline-flex !important;
         padding-left: 0px;
     }
+
     .groupNews > button:nth-child(2) {
         left: -20px !important;
         left: -15px;
@@ -1180,26 +1236,27 @@ footer .container span {
            
            
     }
+
     #news > div:nth-child(1) > p:nth-child(2) {
         font-size: 18px;
     }
+
     #news input {
         width: 429px;
         padding-left: 13px;
         margin-left: -38px;
         padding-right: 38px;
         right: -24px;
-      }
-      .buttonContact {
-        margin-top: 5px;
-       }
-       .btn {
-        font-size: 15px;
-       }
-       
-       
-
     }
+
+    .buttonContact {
+        margin-top: 5px;
+    }
+
+    .btn {
+        font-size: 15px;
+    }
+}
        
        
        
