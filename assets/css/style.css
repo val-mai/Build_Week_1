@@ -1155,9 +1155,68 @@ footer .container span {
     .banner {
         background-image: url(../images/header.jpg);
         background-size: cover;
-        height: 450px;
+        height: 688px;
         width: 100%;
         position: relative;
     }
-       
+    nav ul {
+        margin-left: 288px;
+        margin-right: 53px;
+        font-size: 15px;
+        padding-top: 22px;
     }
+    #logo {
+        padding-bottom: 0.5em;
+        padding-top: 24px;
+        padding-left: 24px;
+    }
+    .home > div:nth-child(1) > div:nth-child(1) > h3:nth-child(1) {
+        margin-left: 38px;
+        font-size: 1.2rem;
+    }
+    #buttonblog {
+        font-size: 1rem;
+    }
+    .moreinfo > a:nth-child(1) > button:nth-child(1) {
+        font-size: 1rem;
+    }
+    .groupNews {
+        display: inline-flex !important;
+        padding-left: 0px;
+    }
+    .groupNews > button:nth-child(2) {
+        left: -20px !important;
+        left: -15px;
+        padding-right: 4px;
+        width: 300px !important;
+           
+           
+    }
+    #news > div:nth-child(1) > p:nth-child(2) {
+        font-size: 18px;
+    }
+    #news input {
+        width: 429px;
+        padding-left: 13px;
+        margin-left: -38px;
+        padding-right: 38px;
+        right: -24px;
+      }
+      .buttonContact {
+        margin-top: 5px;
+       }
+       .btn {
+        font-size: 15px;
+       }
+       
+       
+
+    }
+       
+       
+       
+       
+       
+       
+       
+    
